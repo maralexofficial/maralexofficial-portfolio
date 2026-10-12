@@ -2,408 +2,167 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Max Mustermann – Portfolio</title>
-  <meta name="description" content="Persönliches Portfolio von Max Mustermann.">
+  <meta name="description"
+        content="Portfolio mit Projekten aus Webentwicklung und Design.">
+  <meta name="theme-color" content="#0b0d10">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    :root {
-      --bg: #0b0d10;
-      --card: #14171c;
-      --text: #f5f5f5;
-      --muted: #9ca3af;
-      --accent: #7c3aed;
-      --border: #252a32;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .container {
-      width: min(1100px, 90%);
-      margin: auto;
-    }
-
-    /* Navigation */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(11, 13, 16, 0.85);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border);
-      z-index: 100;
-    }
-
-    nav .container {
-      height: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-
-    .logo span {
-      color: var(--accent);
-    }
-
-    nav ul {
-      display: flex;
-      gap: 25px;
-      list-style: none;
-    }
-
-    nav a {
-      color: var(--muted);
-      transition: 0.2s;
-    }
-
-    nav a:hover {
-      color: var(--text);
-    }
-
-    /* Hero */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding-top: 70px;
-    }
-
-    .hero-content {
-      max-width: 750px;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 6px 12px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      color: var(--muted);
-      margin-bottom: 20px;
-      font-size: 0.9rem;
-    }
-
-    h1 {
-      font-size: clamp(3rem, 8vw, 6rem);
-      line-height: 1;
-      margin-bottom: 25px;
-    }
-
-    h1 span {
-      color: var(--accent);
-    }
-
-    .hero p {
-      color: var(--muted);
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin-bottom: 30px;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .button {
-      padding: 12px 20px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      transition: 0.2s;
-    }
-
-    .button.primary {
-      background: var(--accent);
-      border-color: var(--accent);
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
-    }
-
-    /* Sections */
-    section {
-      padding: 100px 0;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      margin-bottom: 40px;
-    }
-
-    .section-title span {
-      color: var(--accent);
-    }
-
-    /* About */
-    .about {
-      max-width: 700px;
-      color: var(--muted);
-      font-size: 1.1rem;
-    }
-
-    /* Skills */
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .skill {
-      background: var(--card);
-      border: 1px solid var(--border);
-      padding: 10px 16px;
-      border-radius: 8px;
-    }
-
-    /* Projects */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .project {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 25px;
-      transition: 0.2s;
-    }
-
-    .project:hover {
-      transform: translateY(-5px);
-      border-color: #3a404b;
-    }
-
-    .project h3 {
-      margin-bottom: 10px;
-    }
-
-    .project p {
-      color: var(--muted);
-      margin-bottom: 20px;
-    }
-
-    .project a {
-      color: var(--accent);
-    }
-
-    /* Contact */
-    .contact {
-      text-align: center;
-      max-width: 650px;
-      margin: auto;
-    }
-
-    .contact p {
-      color: var(--muted);
-      margin-bottom: 25px;
-    }
-
-    /* Footer */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 30px 0;
-      color: var(--muted);
-      text-align: center;
-    }
-
-    @media (max-width: 600px) {
-      nav ul {
-        gap: 12px;
-        font-size: 0.85rem;
-      }
-
-      h1 {
-        font-size: 3.5rem;
-      }
-
-      section {
-        padding: 70px 0;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="./dist/output.css">
 </head>
 
-<body>
+<body class="antialiased">
 
-  <nav>
-    <div class="container">
-      <a href="#" class="logo">Max<span>.</span></a>
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-border
+                 bg-background/85 backdrop-blur-xl">
+    <nav class="container-site flex h-[70px] items-center
+                justify-between" aria-label="Hauptnavigation">
+      <a href="#home" class="text-xl font-bold">
+        Max<span class="text-accent">.</span>
+      </a>
 
-      <ul>
-        <li><a href="#about">Über mich</a></li>
-        <li><a href="#projects">Projekte</a></li>
-        <li><a href="#contact">Kontakt</a></li>
+      <ul class="flex items-center gap-3 text-sm sm:gap-6">
+        <li><a class="text-muted hover:text-foreground" href="#about">Über mich</a></li>
+        <li><a class="text-muted hover:text-foreground" href="#projects">Projekte</a></li>
+        <li><a class="text-muted hover:text-foreground" href="#contact">Kontakt</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <main>
+    <section id="home" class="container-site flex min-h-screen
+                             items-center py-32">
+      <div class="max-w-3xl">
+        <span class="mb-6 inline-block rounded-full border border-border
+                     px-4 py-2 text-sm text-muted">
+          ✦ Willkommen auf meiner Website
+        </span>
 
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
+        <h1 class="mb-7 text-5xl font-bold leading-tight tracking-tight
+                   sm:text-7xl lg:text-8xl">
+          Hallo, ich bin<br>
+          <span class="text-accent">Max.</span>
+        </h1>
 
-          <div class="badge">👋 Willkommen auf meiner Website</div>
-
-          <h1>
-            Hallo, ich bin<br>
-            <span>Max.</span>
-          </h1>
-
-          <p>
-            Ich bin Webentwickler und liebe es, moderne,
-            schnelle und schöne Websites zu bauen.
-          </p>
-
-          <div class="buttons">
-            <a href="#projects" class="button primary">
-              Meine Projekte
-            </a>
-
-            <a href="#contact" class="button">
-              Kontakt
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-
-        <h2 class="section-title">
-          Über <span>mich</span>
-        </h2>
-
-        <p class="about">
-          Ich beschäftige mich mit Webentwicklung, Design und
-          modernen Technologien. Mein Ziel ist es, digitale
-          Produkte zu entwickeln, die nicht nur gut aussehen,
-          sondern auch einfach und angenehm zu benutzen sind.
+        <p class="mb-9 max-w-xl text-lg text-muted sm:text-xl">
+          Ich bin Webentwickler und entwickle moderne,
+          schnelle und durchdachte digitale Erlebnisse.
         </p>
 
-        <br><br>
-
-        <div class="skills">
-          <div class="skill">HTML</div>
-          <div class="skill">CSS</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">Git</div>
-          <div class="skill">GitHub</div>
-          <div class="skill">Responsive Design</div>
+        <div class="flex flex-wrap gap-4">
+          <a href="#projects" class="button button-primary">
+            Meine Projekte →
+          </a>
+          <a href="#contact" class="button">
+            Kontakt aufnehmen
+          </a>
         </div>
-
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects">
-      <div class="container">
-
-        <h2 class="section-title">
-          Meine <span>Projekte</span>
+    <section id="about" class="section-padding">
+      <div class="container-site">
+        <h2 class="section-heading">
+          Über <span class="text-accent">mich</span>
         </h2>
 
-        <div class="projects">
+        <p class="max-w-2xl text-lg leading-relaxed text-muted">
+          Ich beschäftige mich mit Webentwicklung, Design und
+          modernen Technologien. Mein Ziel sind digitale Produkte,
+          die gut aussehen und einfach zu benutzen sind.
+        </p>
 
-          <article class="project">
-            <h3>Projekt 01</h3>
-            <p>
-              Eine moderne responsive Website mit
-              HTML, CSS und JavaScript.
-            </p>
-            <a href="#">Projekt ansehen →</a>
-          </article>
-
-          <article class="project">
-            <h3>Projekt 02</h3>
-            <p>
-              Eine kleine Web-App mit Fokus auf
-              einfache Bedienung und Performance.
-            </p>
-            <a href="#">Projekt ansehen →</a>
-          </article>
-
-          <article class="project">
-            <h3>Projekt 03</h3>
-            <p>
-              Ein weiteres spannendes Projekt,
-              das ich umgesetzt habe.
-            </p>
-            <a href="#">Projekt ansehen →</a>
-          </article>
-
+        <div class="mt-8 flex flex-wrap gap-3">
+          <span class="rounded-lg border border-border bg-surface px-4 py-2">HTML</span>
+          <span class="rounded-lg border border-border bg-surface px-4 py-2">CSS</span>
+          <span class="rounded-lg border border-border bg-surface px-4 py-2">JavaScript</span>
+          <span class="rounded-lg border border-border bg-surface px-4 py-2">PHP</span>
+          <span class="rounded-lg border border-border bg-surface px-4 py-2">Laravel</span>
+          <span class="rounded-lg border border-border bg-surface px-4 py-2">GitHub</span>
         </div>
-
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container">
+    <section id="projects" class="section-padding">
+      <div class="container-site">
+        <h2 class="section-heading">
+          Meine <span class="text-accent">Projekte</span>
+        </h2>
 
-        <div class="contact">
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="project-card">
+            <p class="mb-4 text-sm font-semibold text-accent">01 / WEB</p>
+            <h3 class="mb-3 text-xl font-semibold">Webentwicklung</h3>
+            <p class="mb-6 text-muted">
+              Moderne Websites mit responsivem Design und
+              übersichtlicher Benutzerführung.
+            </p>
+            <a href="#contact" class="font-medium text-accent hover:underline">
+              Mehr erfahren →
+            </a>
+          </article>
 
-          <h2 class="section-title">
-            Kontakt <span>aufnehmen</span>
+          <article class="project-card">
+            <p class="mb-4 text-sm font-semibold text-accent">02 / APP</p>
+            <h3 class="mb-3 text-xl font-semibold">Eigene Anwendungen</h3>
+            <p class="mb-6 text-muted">
+              Praktische Tools und Anwendungen mit Fokus auf
+              Funktionalität und Performance.
+            </p>
+            <a href="#contact" class="font-medium text-accent hover:underline">
+              Mehr erfahren →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <p class="mb-4 text-sm font-semibold text-accent">03 / LAB</p>
+            <h3 class="mb-3 text-xl font-semibold">Technische Projekte</h3>
+            <p class="mb-6 text-muted">
+              Experimente, Automatisierungen und neue Ideen
+              rund um moderne Technologien.
+            </p>
+            <a href="#contact" class="font-medium text-accent hover:underline">
+              Mehr erfahren →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+      <div class="container-site">
+        <div class="mx-auto max-w-2xl rounded-2xl border border-border
+                    bg-surface p-8 text-center sm:p-12">
+          <h2 class="section-heading mb-5">
+            Lass uns <span class="text-accent">reden.</span>
           </h2>
 
-          <p>
-            Du möchtest mit mir zusammenarbeiten oder
-            einfach Hallo sagen? Schreib mir gerne.
+          <p class="mb-8 text-muted">
+            Du hast eine Idee oder möchtest mit mir zusammenarbeiten?
+            Schreib mir gerne.
           </p>
 
-          <a
-            href="mailto:hallo@example.com"
-            class="button primary"
-          >
-            hallo@example.com
+          <a href="mailto:hallo@example.com" class="button button-primary">
+            Nachricht schreiben ↗
           </a>
-
         </div>
-
       </div>
     </section>
-
   </main>
 
-  <footer>
-    <div class="container">
-      © 2026 Max Mustermann · Alle Rechte vorbehalten
+  <footer class="border-t border-border py-8">
+    <div class="container-site flex flex-col items-center justify-between
+                gap-3 text-center text-sm text-muted sm:flex-row">
+      <p>© <span id="year">2026</span> Max Mustermann</p>
+      <a href="#home" class="hover:text-foreground">Zurück nach oben ↑</a>
     </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
 
 </body>
 </html>
