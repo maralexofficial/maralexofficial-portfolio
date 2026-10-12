@@ -28,7 +28,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
 
       - name: Verify project files
         run: |
@@ -60,11 +59,11 @@ jobs:
             exit 1
           fi
 
-          echo "CSS-Datei erfolgreich erstellt:"
+          echo "CSS erfolgreich erzeugt:"
           wc -c dist/output.css
 
           if ! grep -q '\.text-accent' dist/output.css; then
-            echo "::warning::Die erwartete Klasse .text-accent wurde nicht gefunden."
+            echo "::warning::Die CSS-Klasse .text-accent wurde nicht gefunden."
           fi
 
       - name: Prepare website
