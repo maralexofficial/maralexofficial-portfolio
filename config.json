@@ -5,6 +5,10 @@
     "description": "Webentwicklung, Linux und eigene Softwareprojekte",
     "url": "https://www.maralex.xyz"
   },
+  "hero": {
+    "title": "Test",
+    "text": "Ich bin 36 Jahre alt und Familienvater. Neben meinem Alltag beschäftige ich mich gerne mit Webentwicklung, programmiere Discord-Bots mit Discord.js und entwickle eigene Projekte wie ein privates CMS mit Laravel. Außerdem spiele ich gerne Xbox und Brawl Stars."
+  },
   "profile": {
     "name": "Alexander Bergmann",
     "role": "Web Developer",
