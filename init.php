@@ -14,7 +14,7 @@ if (!is_array($config)) {
     exit('Invalid configuration file.');
 }
 
-function config(string $path, mixed $default = null): mixed
+function config(string $path, mixed $default = 'n/a'): mixed
 {
     global $config;
 
@@ -28,5 +28,5 @@ function config(string $path, mixed $default = null): mixed
         $value = $value[$key];
     }
 
-    return $value;
+    return $value ?? $default;
 }
