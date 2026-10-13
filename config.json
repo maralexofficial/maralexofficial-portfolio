@@ -10,10 +10,10 @@
       "first": "Hallo, ich bin der",
       "second": "Alexander"
     },
-    "text": "36 Jahre, Familienvater und Technikbegeisterter aus Unterfranken.\nIn meiner Freizeit entwickle ich Webseiten, Discord-Bots und eigene Softwareprojekte.\nWenn ich nicht programmiere, bin ich gerne an der Xbox oder spiele Brawl Stars."
-  },
-  "button": {
-    "projects": "Projekte",
-    "contact": "Kontakt"
+    "text": "36 Jahre, Familienvater und Technikbegeisterter aus Unterfranken.\nIn meiner Freizeit entwickle ich Webseiten, Discord-Bots und eigene Softwareprojekte.\nWenn ich nicht programmiere, bin ich gerne an der Xbox oder spiele Brawl Stars.",
+    "button": {
+      "projects": "Projekte",
+      "contact": "Kontakt"
+    }
   }
 }
