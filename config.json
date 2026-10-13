@@ -1,0 +1,16 @@
+{
+  "site": {
+    "name": "maralex.xyz",
+    "title": "Alexander Bergmann | Developer",
+    "description": "Webentwicklung, Linux und eigene Softwareprojekte",
+    "url": "https://www.maralex.xyz"
+  },
+  "profile": {
+    "name": "Alexander Bergmann",
+    "role": "Web Developer",
+    "location": "Germany"
+  },
+  "social": {
+    "github": "https://github.com/maralexofficial"
+  }
+}

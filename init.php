@@ -4,7 +4,7 @@ $configPath = __DIR__ . '/config.json';
 
 if (!is_file($configPath)) {
     http_response_code(500);
-    exit('Configuration file not found. ' . $configPath);
+    exit('Configuration file not found.');
 }
 
 $config = json_decode(file_get_contents($configPath), true);
