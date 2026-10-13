@@ -29,15 +29,15 @@ require_once 'init.php';
         <div class="max-w-3xl">
           <span class="mb-6 inline-block rounded-full border border-border px-4 py-2 text-sm text-muted">✦ Willkommen auf meiner Website</span>
           <h1 class="mb-7 text-5xl font-bold leading-tight tracking-tight sm:text-7xl lg:text-8xl">
-            <?php htmlspecialchars(config('hero.title.first'), ENT_QUOTES, 'UTF-8') ?><br>
-            <span class="text-accent"><?php htmlspecialchars(config('hero.title.second'), ENT_QUOTES, 'UTF-8') ?></span>
+            <?php echo htmlspecialchars(config('hero.title.first'), ENT_QUOTES, 'UTF-8') ?><br>
+            <span class="text-accent"><?php echo htmlspecialchars(config('hero.title.second'), ENT_QUOTES, 'UTF-8') ?></span>
           </h1>
           <p class="mb-9 max-w-xl text-lg text-muted sm:text-xl">
-            <?php htmlspecialchars(config('hero.text'), ENT_QUOTES, 'UTF-8') ?>
+            <?php echo htmlspecialchars(config('hero.text'), ENT_QUOTES, 'UTF-8') ?>
           </p>
           <div class="flex flex-wrap gap-4">
-            <a href="#projects" class="button button-primary"><?php htmlspecialchars(config('hero.button.projects'), ENT_QUOTES, 'UTF-8') ?> →</a>
-            <a href="#contact" class="button"><?php htmlspecialchars(config('hero.button.contact'), ENT_QUOTES, 'UTF-8') ?></a>
+            <a href="#projects" class="button button-primary"><?php echo htmlspecialchars(config('hero.button.projects'), ENT_QUOTES, 'UTF-8') ?> →</a>
+            <a href="#contact" class="button"><?php echo htmlspecialchars(config('hero.button.contact'), ENT_QUOTES, 'UTF-8') ?></a>
           </div>
         </div>
       </div>
