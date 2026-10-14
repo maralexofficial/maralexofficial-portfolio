@@ -31,5 +31,19 @@
             "projects": "Projekte",
             "contact": "Kontakt"
         }
+    },
+    "about": {
+      "text": "",
+      "badges": [
+        {
+            "label": "HTML"
+        },
+        {
+            "label": "CSS"
+        },
+        {
+            "label": "PHP"
+        }
+      ]
     }
 }

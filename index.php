@@ -62,12 +62,13 @@ require_once 'init.php';
           Ich beschäftige mich mit Webentwicklung, Design und modernen Technologien. Mein Ziel sind digitale Produkte, die gut aussehen und einfach zu benutzen sind.
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
-          <span class="rounded-lg border border-border bg-surface px-4 py-2">HTML</span>
-          <span class="rounded-lg border border-border bg-surface px-4 py-2">CSS</span>
-          <span class="rounded-lg border border-border bg-surface px-4 py-2">JavaScript</span>
-          <span class="rounded-lg border border-border bg-surface px-4 py-2">PHP</span>
-          <span class="rounded-lg border border-border bg-surface px-4 py-2">Laravel</span>
-          <span class="rounded-lg border border-border bg-surface px-4 py-2">GitHub</span>
+
+    <?php foreach (config('about.badges') as $item): ?>
+      <span class="rounded-lg border border-border bg-surface px-4 py-2">
+        <?php echo htmlspecialchars($item['label'], ENT_QUOTES, 'UTF-8') ?>
+      </span>
+    <?php endforeach; ?>
+          
         </div>
       </div>
     </section>
