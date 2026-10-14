@@ -1,19 +1,35 @@
 {
-  "site": {
-    "name": "maralex.xyz",
-    "title": "Alexander Bergmann | Developer",
-    "description": "Webentwicklung, Linux und eigene Softwareprojekte",
-    "url": "https://www.maralex.xyz"
-  },
-  "hero": {
-    "title": {
-      "first": "Hallo, ich bin der",
-      "second": "Alexander"
+    "site": {
+        "name": "maralex",
+        "seo": {
+            "title": "Alexander Bergmann | Developer",
+            "description": "Webentwicklung, Linux und eigene Softwareprojekte"
+        },
+        "url": "https://www.maralex.xyz"
     },
-    "text": "36 Jahre, Familienvater und Technikbegeisterter aus Unterfranken.\nIn meiner Freizeit entwickle ich Webseiten, Discord-Bots und eigene Softwareprojekte.\nWenn ich nicht programmiere, bin ich gerne an der Xbox oder spiele Brawl Stars.",
-    "button": {
-      "projects": "Projekte",
-      "contact": "Kontakt"
+    "navigation": [
+        {
+            "label": "Über mich",
+            "url": "#about"
+        },
+        {
+            "label": "Projekte",
+            "url": "#projects"
+        },
+        {
+            "label": "Kontakte",
+            "url": "#contact"
+        }
+    ],
+    "hero": {
+        "title": {
+            "first": "Hallo, ich bin der",
+            "second": "Alexander"
+        },
+        "text": "36 Jahre, Familienvater und Technikbegeisterter aus Unterfranken.\nIn meiner Freizeit entwickle ich Webseiten, Discord-Bots und eigene Softwareprojekte.\nWenn ich nicht programmiere, bin ich gerne an der Xbox oder spiele Brawl Stars.",
+        "button": {
+            "projects": "Projekte",
+            "contact": "Kontakt"
+        }
     }
-  }
 }

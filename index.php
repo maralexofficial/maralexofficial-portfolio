@@ -3,13 +3,19 @@
 require_once 'init.php';
 
 ?>
-<!DOCTYPE html><html lang="de">
+<!DOCTYPE html>
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Max Mustermann – Portfolio</title>
-  <meta name="description" content="Portfolio mit Projekten aus Webentwicklung und Design.">
+  
+  <title><?php echo htmlspecialchars(config('site.meta.title'), ENT_QUOTES, 'UTF-8') ?></title>
+  <meta name="author" content="<?php echo htmlspecialchars(config('site.meta.author'), ENT_QUOTES, 'UTF-8') ?>">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="<?php echo htmlspecialchars(config('site.meta.description'), ENT_QUOTES, 'UTF-8') ?>">
+  <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0b0d10">
+  
   <link rel="stylesheet" href="./dist/output.css">
 </head>
 <body class="antialiased">
@@ -17,9 +23,16 @@ require_once 'init.php';
     <nav class="container-site flex h-[70px] items-center justify-between" aria-label="Hauptnavigation">
       <a href="#home" class="text-xl font-bold">Max<span class="text-accent">.</span></a>
       <ul class="flex items-center gap-3 text-sm sm:gap-6">
-        <li><a class="text-muted transition hover:text-foreground" href="#about">Über mich</a></li>
-        <li><a class="text-muted transition hover:text-foreground" href="#projects">Projekte</a></li>
-        <li><a class="text-muted transition hover:text-foreground" href="#contact">Kontakt</a></li>
+          <?php foreach (config('navigation') as $item): ?>
+              <li>
+                  <a
+                      class="text-muted transition hover:text-foreground"
+                      href="<?= htmlspecialchars($item['url'], ENT_QUOTES, 'UTF-8') ?>"
+                  >
+                      <?= htmlspecialchars($item['label'], ENT_QUOTES, 'UTF-8') ?>
+                  </a>
+              </li>
+          <?php endforeach; ?>
       </ul>
     </nav>
   </header>
