@@ -33,7 +33,11 @@
         }
     },
     "about": {
-      "text": "",
+      "title": {
+        "first": "Über",
+        "second": "mich"
+      },
+      "text": "Webdev, Design & Tech-Nerd 🤓\nIch liebe es, Ideen in Code zu verwandeln, mit KI zu experimentieren und digitale Projekte umzusetzen. 🚀",
       "badges": [
         {
             "label": "HTML"

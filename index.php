@@ -57,9 +57,9 @@ require_once 'init.php';
     </section>
     <section id="about" class="section-padding">
       <div class="container-site">
-        <h2 class="section-heading">Über <span class="text-accent">mich</span></h2>
+        <h2 class="section-heading"><?php echo htmlspecialchars(config('about.title.first'), ENT_QUOTES, 'UTF-8') ?> <span class="text-accent"><?php echo htmlspecialchars(config('about.title.second'), ENT_QUOTES, 'UTF-8') ?></span></h2>
         <p class="max-w-2xl text-lg leading-relaxed text-muted">
-          Ich beschäftige mich mit Webentwicklung, Design und modernen Technologien. Mein Ziel sind digitale Produkte, die gut aussehen und einfach zu benutzen sind.
+           <?php echo htmlspecialchars(config('about.text'), ENT_QUOTES, 'UTF-8') ?>
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
 
