@@ -7,7 +7,8 @@
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.11",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.11",
+    "alpinejs": "^3.17.4"
   },
   "overrides": {
     "@parcel/watcher": "2.6.0"
