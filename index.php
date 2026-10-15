@@ -25,8 +25,7 @@ require_once 'init.php';
   <meta name="theme-color" content="#0b0d10">
 
   <link rel="stylesheet" href="./dist/output.css">
-
-  <script defer src="/assets/js/components/back-to-top.alpine.js"></script>
+  
   <script type="module" src="/dist/assets/js/app.js"></script>
 </head>
 

@@ -1,5 +1,6 @@
-import Alpine from 'alpinejs'
- 
-window.Alpine = Alpine
- 
-Alpine.start()
+import Alpine from 'alpinejs';
+import './components/back-to-top.alpine.js';
+
+window.Alpine = Alpine;
+
+Alpine.start();
