@@ -52,7 +52,7 @@ require_once 'init.php';
     </nav>
   </header>
 
-  <div x-data="{ message: 'Hello World! Alpine.js läuft 🚀' }" class="p-4">
+  <div class="bg-white" x-data="{ message: 'Hello World! Alpine.js läuft 🚀' }" class="p-4">
     <p x-text="message"></p>
   </div>
 
