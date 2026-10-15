@@ -22,6 +22,7 @@
         }
     ],
     "hero": {
+        "badge": "Herzlich willkommen",
         "title": {
             "first": "Hallo, ich bin der",
             "second": "Alexander"
