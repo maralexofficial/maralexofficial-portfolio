@@ -2,7 +2,7 @@
 
 $supportedLanguages = ['de', 'en'];
 $defaultLanguage = 'de';
-$languageDirectory = dirname(__DIR__) . '/lang';
+$languageDirectory = __DIR__ . '/lang';
 
 // Change language
 $requestPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
