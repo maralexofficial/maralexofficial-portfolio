@@ -31,12 +31,6 @@ require_once 'init.php';
 </head>
 
 <body class="antialiased">
-
-  
-<div x-data="{ message: 'Hello World! Alpine.js läuft 🚀' }" class="p-4">
-    <p x-text="message"></p>
-</div>
-  
   <header class="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/85 backdrop-blur-xl">
     <nav class="container-site flex h-[70px] items-center justify-between" aria-label="Hauptnavigation">
       <a href="<?= htmlspecialchars(l10n('site.url'), ENT_QUOTES, 'UTF-8') ?>" class="text-xl font-bold">
@@ -58,6 +52,10 @@ require_once 'init.php';
       </ul>
     </nav>
   </header>
+
+  <div x-data="{ message: 'Hello World! Alpine.js läuft 🚀' }" class="p-4">
+    <p x-text="message"></p>
+  </div>
 
   <main>
     <section id="home" class="hero-background flex min-h-screen items-center py-32">
