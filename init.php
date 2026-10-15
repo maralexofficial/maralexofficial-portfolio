@@ -56,7 +56,7 @@ $languagePath = $languageDirectory . '/' . $language . '.json';
 
 if (!is_file($languagePath)) {
     http_response_code(500);
-    exit('Language file not found.');
+    exit('Language file not found: ' . $languagePath);
 }
 
 try {
