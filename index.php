@@ -31,13 +31,8 @@ require_once 'init.php';
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0b0d10">
 
+  <link rel="stylesheet" href="/assets/fonts/simpleicons/simple-icons.min.css">
   <link rel="stylesheet" href="/dist/output.css?v=6">
-
-  <script defer src="/assets/js/components/back-to-top.alpine.js?v=4"></script>
-  <script defer src="/assets/js/components/reveal.alpine.js?v=1"></script>
-  <script defer src="/assets/js/components/language-toast.alpine.js?v=1"></script>
-  <script defer src="/assets/js/components/notifications.alpine.js?v=1"></script>
-  <script defer src="/assets/js/alpine.min.js?v=2"></script>
 </head>
 
 <body class="antialiased">
@@ -166,6 +161,8 @@ require_once 'init.php';
             </span>
         </h2>
         <?php echo e(l10n('social.text'), ENT_QUOTES, 'UTF-8') ?>
+
+        <i class="si si-simpleicons"></i>
       </div>
     </section>
 
@@ -207,6 +204,12 @@ require_once 'init.php';
       </span>
     </div>
   </footer>
+
+  <script defer src="/assets/js/components/back-to-top.alpine.js?v=4"></script>
+  <script defer src="/assets/js/components/reveal.alpine.js?v=1"></script>
+  <script defer src="/assets/js/components/language-toast.alpine.js?v=1"></script>
+  <script defer src="/assets/js/components/notifications.alpine.js?v=1"></script>
+  <script defer src="/assets/js/alpine.min.js?v=2"></script>
 
   <a
     href="#home"
