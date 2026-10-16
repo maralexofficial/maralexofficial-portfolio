@@ -165,7 +165,7 @@ require_once 'init.php';
               <?php echo e(l10n('social.title.second'), ENT_QUOTES, 'UTF-8') ?>
             </span>
         </h2>
-        <?php echo e(l10n('about.text'), ENT_QUOTES, 'UTF-8') ?>
+        <?php echo e(l10n('social.text'), ENT_QUOTES, 'UTF-8') ?>
       </div>
     </section>
 
