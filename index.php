@@ -12,6 +12,8 @@
 
 require_once 'init.php';
 
+notify.success('Änderungen gespeichert.');
+
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo e($language, ENT_QUOTES, 'UTF-8') ?>">
