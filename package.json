@@ -3,12 +3,13 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "tailwindcss -i ./assets/css/input.css -o ./dist/output.css --minify"
+    "build": "tailwindcss -i ./assets/css/input.css -o ./dist/output.css --minify && esbuild ./assets/js/app.js --bundle --minify --outfile=./dist/assets/js/app.js"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.11",
     "tailwindcss": "^4.1.11",
-    "alpinejs": "^3.17.4"
+    "alpinejs": "^3.17.4",
+    "esbuild": "^0.28.2"
   },
   "overrides": {
     "@parcel/watcher": "2.6.0"
