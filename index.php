@@ -206,5 +206,45 @@ require_once 'init.php';
   >
     <?php echo e(l10n('common.backToTop.label'), ENT_QUOTES, 'UTF-8') ?>
   </a>
+
+  
+<div
+    x-data
+    x-cloak
+    class="fixed bottom-6 left-4 right-4 z-[100] flex flex-col items-end gap-3 sm:left-auto sm:w-96"
+    aria-live="polite"
+>
+    <template x-for="item in $store.notifications.items" :key="item.id">
+        <div
+            x-show="item.visible"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="translate-y-3 opacity-0"
+            x-transition:enter-end="translate-y-0 opacity-100"
+            x-transition:leave="transition ease-in duration-200"
+            x-transition:leave-start="translate-y-0 opacity-100"
+            x-transition:leave-end="translate-y-2 opacity-0"
+            class="flex w-full items-center gap-3 rounded-xl border border-border border-l-4 bg-surface p-4 shadow-2xl"
+            :class="{
+                'border-l-accent': item.type === 'success',
+                'border-l-red-500': item.type === 'error',
+                'border-l-amber-400': item.type === 'warning',
+                'border-l-blue-400': item.type === 'info'
+            }"
+            role="status"
+        >
+            <p class="min-w-0 flex-1 text-sm text-foreground" x-text="item.message"></p>
+
+            <button
+                type="button"
+                class="text-muted transition hover:text-foreground"
+                aria-label="Benachrichtigung schließen"
+                @click="$store.notifications.dismiss(item.id)"
+            >
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </template>
+</div>
+
 </body>
 </html>
