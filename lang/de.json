@@ -59,11 +59,11 @@
       "text": "Neue Projekte und spannende Ideen reizen mich.\nIch arbeite mich schnell in neue Themen ein, denke mich gerne in unterschiedliche Aufgaben hinein und finde mich auch in bestehenden Teams schnell zurecht.",
       "cards": [
         {
-            "tag": "HTML",
-            "title": "HTML",
-            "text": "HTML",
+            "tag": "01 / WEB",
+            "title": "Webentwicklung",
+            "text": "Moderne Websites mit responsivem Design und übersichtlicher Benutzerführung.",
             "action": {
-              "label": "HTML",
+              "label": "Mehr erfahren",
               "url": "#"
             }
         }

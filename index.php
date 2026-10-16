@@ -127,18 +127,14 @@ require_once 'init.php';
 
           <?php foreach (l10n('projects.cards') as $item): ?>
             <article class="project-card">
-              <p class="mb-4 text-sm font-semibold text-accent">01 / WEB</p>
-              <h3 class="mb-3 text-xl font-semibold">Webentwicklung</h3>
-              <p class="mb-6 text-muted">Moderne Websites mit responsivem Design und übersichtlicher Benutzerführung.</p>
+              <p class="mb-4 text-sm font-semibold text-accent"><?php echo htmlspecialchars($item['tag'], ENT_QUOTES, 'UTF-8') ?></p>
+              <h3 class="mb-3 text-xl font-semibold">
+                <?php echo htmlspecialchars($item['title'], ENT_QUOTES, 'UTF-8') ?>
+              </h3>
+              <p class="mb-6 text-muted">
+                <?php echo htmlspecialchars($item['text'], ENT_QUOTES, 'UTF-8') ?>
+              </p>
               <a href="#contact" class="font-medium text-accent hover:underline">Mehr erfahren →</a>
-              <?php echo htmlspecialchars($item['tag'], ENT_QUOTES, 'UTF-8') ?>
-
-              <?php echo htmlspecialchars($item['title'], ENT_QUOTES, 'UTF-8') ?>
-
-              <?php echo htmlspecialchars($item['text'], ENT_QUOTES, 'UTF-8') ?>
-
-              <?php echo htmlspecialchars($item['action.label'], ENT_QUOTES, 'UTF-8') ?>
-              <?php echo htmlspecialchars($item['action.url'], ENT_QUOTES, 'UTF-8') ?>
             </article>
           <?php endforeach; ?>
         </div>
