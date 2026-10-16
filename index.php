@@ -159,12 +159,13 @@ require_once 'init.php';
       class="section-padding reveal"
     >
       <div class="container-site">
-      <h2 class="section-heading">
-          <?php echo e(l10n('projects.title.first'), ENT_QUOTES, 'UTF-8') ?>
-          <span class="text-accent">
-            <?php echo e(l10n('projects.title.second'), ENT_QUOTES, 'UTF-8') ?>
-          </span>
-      </h2>
+        <h2 class="section-heading">
+            <?php echo e(l10n('social.title.first'), ENT_QUOTES, 'UTF-8') ?>
+            <span class="text-accent">
+              <?php echo e(l10n('social.title.second'), ENT_QUOTES, 'UTF-8') ?>
+            </span>
+        </h2>
+        <?php echo e(l10n('about.text'), ENT_QUOTES, 'UTF-8') ?>
       </div>
     </section>
 
