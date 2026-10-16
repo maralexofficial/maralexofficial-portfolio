@@ -92,5 +92,8 @@
             }
         }
       ]
+    },
+    "footer": {
+      "copyright": "Copyright by maralex.xyz"
     }
 }
