@@ -153,6 +153,22 @@ require_once 'init.php';
     </section>
 
     <section
+      id="social"
+      x-data="reveal"
+      :class="{ 'is-visible': shown }"
+      class="section-padding reveal"
+    >
+      <div class="container-site">
+      <h2 class="section-heading">
+          <?php echo e(l10n('projects.title.first'), ENT_QUOTES, 'UTF-8') ?>
+          <span class="text-accent">
+            <?php echo e(l10n('projects.title.second'), ENT_QUOTES, 'UTF-8') ?>
+          </span>
+      </h2>
+      </div>
+    </section>
+
+    <section
       id="contact"
       x-data="reveal"
       :class="{ 'is-visible': shown }"
@@ -174,22 +190,6 @@ require_once 'init.php';
             <?php echo e(l10n('contact.action.label'), ENT_QUOTES, 'UTF-8') ?>
           </a>
         </div>
-      </div>
-    </section>
-
-    <section
-      id="social"
-      x-data="reveal"
-      :class="{ 'is-visible': shown }"
-      class="section-padding reveal"
-    >
-      <div class="container-site">
-      <h2 class="section-heading">
-          <?php echo e(l10n('projects.title.first'), ENT_QUOTES, 'UTF-8') ?>
-          <span class="text-accent">
-            <?php echo e(l10n('projects.title.second'), ENT_QUOTES, 'UTF-8') ?>
-          </span>
-      </h2>
       </div>
     </section>
   </main>
