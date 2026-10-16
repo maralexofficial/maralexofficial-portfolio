@@ -14,9 +14,6 @@ require_once 'init.php';
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
-  <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-  <script>eruda.init();</script>
-
   <title><?php echo htmlspecialchars(l10n('site.seo.title'), ENT_QUOTES, 'UTF-8') ?></title>
   <meta name="author" content="<?php echo htmlspecialchars(l10n('site.seo.author'), ENT_QUOTES, 'UTF-8') ?>">
   <meta name="robots" content="index, follow">
