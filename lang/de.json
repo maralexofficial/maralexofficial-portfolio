@@ -7,6 +7,12 @@
         },
         "url": "https://www.maralex.xyz"
     },
+    "common": {
+      "backToTop": {
+        "label": "Top",
+        "ariaLabel": "zurück nach oben!"
+      }
+    },
     "navigation": [
         {
             "label": "Über mich",

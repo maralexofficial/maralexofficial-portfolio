@@ -188,10 +188,10 @@ require_once 'init.php';
     x-transition:leave-start="opacity-100"
     x-transition:leave-end="opacity-0"
     class="fixed bottom-6 right-6 z-50 flex size-12 items-center justify-center button button-primary"
-    aria-label="Zurück nach oben"
-    title="Zurück nach oben"
+    aria-label="<?php echo htmlspecialchars(l10n('common.backToTop.ariaLabel'), ENT_QUOTES, 'UTF-8') ?>"
+    title="<?php echo htmlspecialchars(l10n('common.backToTop.ariaLabel'), ENT_QUOTES, 'UTF-8') ?>"
   >
-    Top
+    <?php echo htmlspecialchars(l10n('common.backToTop.label'), ENT_QUOTES, 'UTF-8') ?>
   </a>
 </body>
 </html>
