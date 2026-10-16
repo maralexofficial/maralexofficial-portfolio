@@ -174,7 +174,7 @@ require_once 'init.php';
         ]), ENT_QUOTES, 'UTF-8') ?>
       </p>
       <span class="mb-6 inline-block rounded-full border border-border px-4 py-2 text-sm text-muted">
-            Sprache ändern: DE | EN
+            Sprache ändern: <a class="text-muted hover:text-accent" href="#">DE</a> |
       </span>
     </div>
   </footer>
