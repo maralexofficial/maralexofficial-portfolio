@@ -26,7 +26,7 @@ require_once 'init.php';
 
   <link rel="stylesheet" href="/dist/output.css?v=4">
 
-  <script defer src="/assets/js/components/back-to-top.alpine.js?v=3"></script>
+  <script defer src="/assets/js/components/back-to-top.alpine.js?v=4"></script>
   <script defer src="/assets/js/components/reveal.alpine.js?v=1"></script>
   <script defer src="/assets/js/alpine.min.js?v=2"></script>
 </head>
