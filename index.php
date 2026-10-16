@@ -98,41 +98,6 @@ require_once 'init.php';
       class="section-padding reveal"
     >
       <div class="container-site">
-        
-<div class="mt-8 flex flex-wrap gap-3">
-    <button
-        type="button"
-        class="button button-primary"
-        @click="notify.success('Das hat funktioniert!')"
-    >
-        Success testen
-    </button>
-
-    <button
-        type="button"
-        class="button"
-        @click="notify.error('Etwas ist schiefgelaufen.')"
-    >
-        Error testen
-    </button>
-
-    <button
-        type="button"
-        class="button"
-        @click="notify.warning('Bitte überprüfe deine Eingaben.')"
-    >
-        Warning testen
-    </button>
-
-    <button
-        type="button"
-        class="button"
-        @click="notify.info('Das ist eine Testbenachrichtigung.')"
-    >
-        Info testen
-    </button>
-</div>
-
         <h2 class="section-heading">
           <?php echo e(l10n('about.title.first'), ENT_QUOTES, 'UTF-8') ?>
           <span class="text-accent"><?php echo e(l10n('about.title.second'), ENT_QUOTES, 'UTF-8') ?></span>
