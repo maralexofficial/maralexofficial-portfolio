@@ -3,7 +3,6 @@
 $supportedLanguages = $config['supported_languages'];
 $defaultLanguage = $config['default_language'];
 
-// Sprache über /lang/de oder /lang/en wechseln
 $requestUri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
 
 if (preg_match('#^/lang/([a-z]{2})/?$#', $requestUri, $matches)) {
@@ -22,7 +21,6 @@ if (preg_match('#^/lang/([a-z]{2})/?$#', $requestUri, $matches)) {
     $referer = $_SERVER['HTTP_REFERER'] ?? '';
     $refererPath = parse_url($referer, PHP_URL_PATH);
 
-    // Nur auf eine lokale URL zurückleiten
     $redirect = '/';
 
     if ($referer !== '') {
@@ -36,21 +34,32 @@ if (preg_match('#^/lang/([a-z]{2})/?$#', $requestUri, $matches)) {
             if ($query !== null) {
                 $redirect .= '?' . $query;
             }
+
+            $fragment = parse_url($referer, PHP_URL_FRAGMENT);
+
+            if ($fragment !== null) {
+                $redirect .= '#' . $fragment;
+            }
         }
+    }
+
+    if (in_array($requestedLanguage, $supportedLanguages, true)) {
+        $separator = str_contains($redirect, '?') ? '&' : '?';
+
+        $redirect .= $separator . 'language_changed='
+            . rawurlencode($requestedLanguage);
     }
 
     header('Location: ' . $redirect, true, 302);
     exit;
 }
 
-// Sprache aus Cookie oder Standardsprache bestimmen
 $cookieLanguage = $_COOKIE['language'] ?? '';
 
 $language = in_array($cookieLanguage, $supportedLanguages, true)
     ? $cookieLanguage
     : $defaultLanguage;
 
-// Übersetzungsdatei laden
 $translationFile = $config['language_directory'] . '/' . $language . '.json';
 
 if (!is_file($translationFile)) {

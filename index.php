@@ -35,6 +35,7 @@ require_once 'init.php';
 
   <script defer src="/assets/js/components/back-to-top.alpine.js?v=4"></script>
   <script defer src="/assets/js/components/reveal.alpine.js?v=1"></script>
+  <script defer src="/assets/js/components/language-toast.alpine.js?v=1"></script>
   <script defer src="/assets/js/components/notifications.alpine.js?v=1"></script>
   <script defer src="/assets/js/alpine.min.js?v=2"></script>
 </head>
