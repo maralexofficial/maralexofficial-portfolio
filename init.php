@@ -77,7 +77,7 @@ if (!is_array($translations)) {
 }
 
 // Translation helper
-function l10n(string $path, mixed $default = 'n/a'): mixed
+function l10n(string $path, mixed $default = null): mixed
 {
     global $translations;
 
@@ -85,11 +85,11 @@ function l10n(string $path, mixed $default = 'n/a'): mixed
 
     foreach (explode('.', $path) as $key) {
         if (!is_array($value) || !array_key_exists($key, $value)) {
-            return $default;
+            return $default ?? "Key not found ({$path})";
         }
 
         $value = $value[$key];
     }
 
-    return $value ?? $default;
+    return $value ?? $default ?? "Key not found ({$path})";
 }
