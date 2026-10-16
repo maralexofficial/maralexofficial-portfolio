@@ -24,7 +24,7 @@ require_once 'init.php';
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0b0d10">
 
-  <link rel="stylesheet" href="/dist/output.css">
+  <link rel="stylesheet" href="/dist/output.css?v=4">
 
   <script defer src="/assets/js/components/back-to-top.alpine.js?v=3"></script>
   <script defer src="/assets/js/components/reveal.alpine.js?v=1"></script>
