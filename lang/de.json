@@ -17,14 +17,14 @@
             "url": "#projects"
         },
         {
-            "label": "Kontakte",
+            "label": "Kontakt",
             "url": "#contact"
         }
     ],
     "hero": {
         "badge": "Herzlich willkommen",
         "title": {
-            "first": "Hallo, ich bin der",
+            "first": "Hallo, ich heisse",
             "second": "Alexander"
         },
         "text": "36 Jahre, Familienvater und Technikbegeisterter aus Unterfranken.\nIn meiner Freizeit entwickle ich Webseiten, Discord-Bots und eigene Softwareprojekte.\nWenn ich nicht programmiere, bin ich gerne an der Xbox oder spiele Brawl Stars.",
@@ -50,5 +50,8 @@
             "label": "PHP"
         }
       ]
+    },
+    "projects": {
+      
     }
 }

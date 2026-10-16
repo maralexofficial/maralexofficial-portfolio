@@ -4,7 +4,7 @@ require_once 'init.php';
 
 ?>
 <!DOCTYPE html>
-<html lang="<?= htmlspecialchars($language, ENT_QUOTES, 'UTF-8') ?>">
+<html lang="<?php echo htmlspecialchars($language, ENT_QUOTES, 'UTF-8') ?>">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,10 +17,10 @@ require_once 'init.php';
   <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
   <script>eruda.init();</script>
 
-  <title><?= htmlspecialchars(l10n('site.seo.title'), ENT_QUOTES, 'UTF-8') ?></title>
-  <meta name="author" content="<?= htmlspecialchars(l10n('site.seo.author'), ENT_QUOTES, 'UTF-8') ?>">
+  <title><?php echo htmlspecialchars(l10n('site.seo.title'), ENT_QUOTES, 'UTF-8') ?></title>
+  <meta name="author" content="<?php echo htmlspecialchars(l10n('site.seo.author'), ENT_QUOTES, 'UTF-8') ?>">
   <meta name="robots" content="index, follow">
-  <meta name="description" content="<?= htmlspecialchars(l10n('site.seo.description'), ENT_QUOTES, 'UTF-8') ?>">
+  <meta name="description" content="<?php echo htmlspecialchars(l10n('site.seo.description'), ENT_QUOTES, 'UTF-8') ?>">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0b0d10">
 
@@ -35,7 +35,7 @@ require_once 'init.php';
   <header class="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/85 backdrop-blur-xl">
     <nav class="container-site flex h-[70px] items-center justify-between" aria-label="Hauptnavigation">
       <a href="#home" class="text-xl font-bold">
-        <?= htmlspecialchars(l10n('site.name'), ENT_QUOTES, 'UTF-8') ?>
+        <?php echo htmlspecialchars(l10n('site.name'), ENT_QUOTES, 'UTF-8') ?>
         <span class="text-accent">.</span>
       </a>
 
@@ -44,9 +44,9 @@ require_once 'init.php';
           <li>
             <a
               class="text-muted transition hover:text-foreground"
-              href="<?= htmlspecialchars($item['url'], ENT_QUOTES, 'UTF-8') ?>"
+              href="<?php echo htmlspecialchars($item['url'], ENT_QUOTES, 'UTF-8') ?>"
             >
-              <?= htmlspecialchars($item['label'], ENT_QUOTES, 'UTF-8') ?>
+              <?php echo htmlspecialchars($item['label'], ENT_QUOTES, 'UTF-8') ?>
             </a>
           </li>
         <?php endforeach; ?>
@@ -59,24 +59,24 @@ require_once 'init.php';
       <div class="container-site">
         <div class="max-w-3xl">
           <span class="mb-6 inline-block rounded-full border border-border px-4 py-2 text-sm text-muted">
-            <?= htmlspecialchars(l10n('site.hero.badge'), ENT_QUOTES, 'UTF-8') ?>
+            <?php echo htmlspecialchars(l10n('site.hero.badge'), ENT_QUOTES, 'UTF-8') ?>
           </span>
 
           <h1 class="mb-7 text-5xl font-bold leading-tight tracking-tight sm:text-7xl lg:text-8xl">
-            <?= htmlspecialchars(l10n('hero.title.first'), ENT_QUOTES, 'UTF-8') ?><br>
-            <span class="text-accent"><?= htmlspecialchars(l10n('hero.title.second'), ENT_QUOTES, 'UTF-8') ?></span>
+            <?php echo htmlspecialchars(l10n('hero.title.first'), ENT_QUOTES, 'UTF-8') ?><br>
+            <span class="text-accent"><?php echo htmlspecialchars(l10n('hero.title.second'), ENT_QUOTES, 'UTF-8') ?></span>
           </h1>
 
           <p class="mb-9 max-w-xl text-lg text-muted sm:text-xl">
-            <?= htmlspecialchars(l10n('hero.text'), ENT_QUOTES, 'UTF-8') ?>
+            <?php echo htmlspecialchars(l10n('hero.text'), ENT_QUOTES, 'UTF-8') ?>
           </p>
 
           <div class="flex flex-wrap gap-4">
             <a href="#projects" class="button button-primary">
-              <?= htmlspecialchars(l10n('hero.button.projects'), ENT_QUOTES, 'UTF-8') ?> →
+              <?php echo htmlspecialchars(l10n('hero.button.projects'), ENT_QUOTES, 'UTF-8') ?> →
             </a>
             <a href="#contact" class="button">
-              <?= htmlspecialchars(l10n('hero.button.contact'), ENT_QUOTES, 'UTF-8') ?>
+              <?php echo htmlspecialchars(l10n('hero.button.contact'), ENT_QUOTES, 'UTF-8') ?>
             </a>
           </div>
         </div>
@@ -91,18 +91,18 @@ require_once 'init.php';
     >
       <div class="container-site">
         <h2 class="section-heading">
-          <?= htmlspecialchars(l10n('about.title.first'), ENT_QUOTES, 'UTF-8') ?>
-          <span class="text-accent"><?= htmlspecialchars(l10n('about.title.second'), ENT_QUOTES, 'UTF-8') ?></span>
+          <?php echo htmlspecialchars(l10n('about.title.first'), ENT_QUOTES, 'UTF-8') ?>
+          <span class="text-accent"><?php echo htmlspecialchars(l10n('about.title.second'), ENT_QUOTES, 'UTF-8') ?></span>
         </h2>
 
         <p class="max-w-2xl text-lg leading-relaxed text-muted">
-          <?= htmlspecialchars(l10n('about.text'), ENT_QUOTES, 'UTF-8') ?>
+          <?php echo htmlspecialchars(l10n('about.text'), ENT_QUOTES, 'UTF-8') ?>
         </p>
 
         <div class="mt-8 flex flex-wrap gap-3">
           <?php foreach (l10n('about.badges') as $item): ?>
             <span class="rounded-lg border border-border bg-surface px-4 py-2">
-              <?= htmlspecialchars($item['label'], ENT_QUOTES, 'UTF-8') ?>
+              <?php echo htmlspecialchars($item['label'], ENT_QUOTES, 'UTF-8') ?>
             </span>
           <?php endforeach; ?>
         </div>
@@ -117,9 +117,9 @@ require_once 'init.php';
     >
       <div class="container-site">
         <h2 class="section-heading">
-          <?= htmlspecialchars(l10n('projects.title.first'), ENT_QUOTES, 'UTF-8') ?>
+          <?php echo htmlspecialchars(l10n('projects.title.first'), ENT_QUOTES, 'UTF-8') ?>
           <span class="text-accent">
-            <?= htmlspecialchars(l10n('projects.title.second'), ENT_QUOTES, 'UTF-8') ?>
+            <?php echo htmlspecialchars(l10n('projects.title.second'), ENT_QUOTES, 'UTF-8') ?>
           </span>
         </h2>
 
@@ -175,8 +175,8 @@ require_once 'init.php';
   <footer class="border-t border-border py-8">
     <div class="container-site flex flex-col items-center justify-between gap-3 text-center text-sm text-muted sm:flex-row">
       <p>
-        © <span id="year"><?= date('Y') ?></span>
-        <?= htmlspecialchars(l10n('footer.copyright'), ENT_QUOTES, 'UTF-8') ?>
+        © <span id="year"><?php echo date('Y') ?></span>
+        <?php echo htmlspecialchars(l10n('footer.copyright'), ENT_QUOTES, 'UTF-8') ?>
       </p>
     </div>
   </footer>
