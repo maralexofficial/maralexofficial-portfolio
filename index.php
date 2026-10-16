@@ -27,7 +27,6 @@ require_once 'init.php';
   <link rel="stylesheet" href="./dist/output.css">
   <script defer src="https://unpkg.com/alpinejs@3.14.9/dist/cdn.min.js"></script>
 
-  <script type="module" src="/dist/assets/js/app.js"></scrip>
 </head>
 
 <body class="antialiased">
