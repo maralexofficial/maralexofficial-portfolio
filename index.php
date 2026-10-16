@@ -176,6 +176,20 @@ require_once 'init.php';
         </div>
       </div>
     </section>
+
+    <section
+      id="social"
+      x-data="reveal"
+      :class="{ 'is-visible': shown }"
+      class="section-padding reveal"
+    >
+      <h2 class="section-heading">
+          <?php echo e(l10n('projects.title.first'), ENT_QUOTES, 'UTF-8') ?>
+          <span class="text-accent">
+            <?php echo e(l10n('projects.title.second'), ENT_QUOTES, 'UTF-8') ?>
+          </span>
+      </h2>
+    </section>
   </main>
 
   <footer class="border-t border-border py-8">
