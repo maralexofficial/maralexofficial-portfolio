@@ -3,7 +3,8 @@
         "name": "maralex",
         "seo": {
             "title": "Alexander Bergmann | Developer",
-            "description": "Webentwicklung, Linux und eigene Softwareprojekte"
+            "description": "Webentwicklung, Linux und eigene Softwareprojekte",
+            "author": "Alexander Bergmann"
         },
         "url": "https://www.maralex.xyz"
     },
