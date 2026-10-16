@@ -106,6 +106,6 @@
         }
     },
     "footer": {
-      "copyright": "{date} | Copyright bei maralex.xyz"
+      "copyright": "© {date} | www.maralex.xyz"
     }
 }
