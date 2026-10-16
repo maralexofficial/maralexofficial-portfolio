@@ -149,15 +149,17 @@ require_once 'init.php';
       <div class="container-site">
         <div class="mx-auto max-w-2xl rounded-2xl border border-border bg-surface p-8 text-center sm:p-12">
           <h2 class="section-heading mb-5">
-            Lass uns <span class="text-accent">reden.</span>
+            <?php echo htmlspecialchars(l10n('contact.title.first'), ENT_QUOTES, 'UTF-8') ?> <span class="text-accent">
+              <?php echo htmlspecialchars(l10n('projects.title.second'), ENT_QUOTES, 'UTF-8') ?>
+            </span>
           </h2>
 
           <p class="mb-8 text-muted">
-            Du hast eine Idee oder möchtest mit mir zusammenarbeiten? Schreib mir gerne.
+            <?php echo htmlspecialchars(l10n('contact.text'), ENT_QUOTES, 'UTF-8') ?>
           </p>
 
-          <a href="mailto:hallo@example.com" class="button button-primary">
-            Nachricht schreiben ↗
+          <a href="<?php echo htmlspecialchars(l10n('contact.action.url'), ENT_QUOTES, 'UTF-8') ?>" class="button button-primary">
+            <?php echo htmlspecialchars(l10n('contact.action.label'), ENT_QUOTES, 'UTF-8') ?>
           </a>
         </div>
       </div>
