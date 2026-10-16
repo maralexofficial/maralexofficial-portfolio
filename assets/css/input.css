@@ -154,21 +154,16 @@ background-position: 58% center;
 }
 }
 
+/* Auf Geräten mit reduzierter Bewegung Animationen verkürzen,
+statt die Inhalte unsichtbar zu lassen. */
 @media (prefers-reduced-motion: reduce) {
-html {
-scroll-behavior: auto;
-}
-
-*,
-*::before,
-*::after {
-animation-duration: 0.01ms !important;
-transition-duration: 0.01ms !important;
-scroll-behavior: auto !important;
+.button,
+.project-card,
+.reveal {
+transition-duration: 180ms;
 }
 
 .reveal {
-opacity: 1;
-transform: none;
+transition-duration: 350ms;
 }
 }
