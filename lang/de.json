@@ -45,7 +45,7 @@
         "first": "Über",
         "second": "mich"
       },
-      "text": "Webdev, Design & Tech-Nerd 🤓\nIch liebe es, Ideen in Code zu verwandeln, mit KI zu experimentieren und digitale Projekte umzusetzen. 🚀",
+      "text": "Ich bin jemand, der gerne hinter die Kulissen schaut, Dinge ausprobiert und eigene Ideen in die Realität umsetzt.\nZwischen Webentwicklung, Design und Softwareprojekten fühle ich mich zu Hause.\nIch mag es, mich in neue Technologien reinzufuchsen, mit KI neue Wege beim Entwickeln auszuprobieren und Lösungen zu bauen, die nicht nur funktionieren, sondern auch durchdacht sind.",
       "badges": [
         {
             "label": "HTML"
@@ -68,30 +68,30 @@
         {
             "tag": "01 / WEB",
             "title": "Webentwicklung",
-            "text": "Moderne Websites mit responsivem Design und übersichtlicher Benutzerführung.",
+            "text": "JavaScript für interaktive Oberflächen und dynamische Anwendungen, TypeScript für typsicheren Code und PHP für serverseitige Logik. Ergänzt durch Python und Ruby für vielseitige Webprojekte.",
             "action": {
-              "label": "Mehr erfahren",
-              "url": "#contact"
+                "label": "Mehr erfahren",
+                "url": "#contact"
             }
         },
         {
-            "tag": "01 / APP",
-            "title": "Webentwicklung",
-            "text": "Moderne Websites mit responsivem Design und übersichtlicher Benutzerführung.",
+            "tag": "02 / DB",
+            "title": "Datenbanken und Abfragen",
+            "text": "MariaDB und MySQL für die strukturierte Speicherung, Verwaltung und Abfrage von Daten. Von relationalen Datenmodellen bis zu effizienten SQL-Abfragen für eigene Anwendungen.",
             "action": {
-              "label": "Mehr erfahren",
-              "url": "#contact"
-            }
-        },
-        {
-            "tag": "01 / SHELL",
-            "title": "System Administration",
-            "text": "Moderne Websites mit responsivem Design und übersichtlicher Benutzerführung.",
-            "action": {
-              "label": "Mehr erfahren",
-              "url": "#contact"
-            }
+                "label": "Mehr erfahren",
+                "url": "#contact"
         }
+    },
+    {
+        "tag": "03 / APP",
+        "title": "App-Entwicklung",
+        "text": "Kotlin für moderne Android-Anwendungen und native App-Funktionen. Von der ersten Idee bis zur praktischen Umsetzung eigener mobiler Anwendungen.",
+        "action": {
+            "label": "Mehr erfahren",
+            "url": "#contact"
+        }
+    }
       ]
     },
     "footer": {
