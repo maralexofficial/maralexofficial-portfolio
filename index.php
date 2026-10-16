@@ -52,10 +52,6 @@ require_once 'init.php';
     </nav>
   </header>
 
-  <div class="bg-white" x-data="{ message: 'Hello World! Alpine.js läuft 🚀' }" class="p-4">
-    <p x-text="message"></p>
-  </div>
-
   <main>
     <section id="home" class="hero-background flex min-h-screen items-center py-32">
       <div class="container-site">
@@ -83,6 +79,12 @@ require_once 'init.php';
           </div>
         </div>
       </div>
+    </section>
+
+    <section x-data="{ message: 'Hello World! Alpine.js läuft 🚀' }">
+        <h2>Hello World</h2>
+        <p x-text="message"></p>
+        <p class="status">Wenn du diesen Text siehst, funktioniert Alpine.</p>
     </section>
 
     <section id="about" class="section-padding">
