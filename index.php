@@ -31,7 +31,7 @@ require_once 'init.php';
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0b0d10">
 
-  <link rel="stylesheet" href="/dist/output.css?v=4">
+  <link rel="stylesheet" href="/dist/output.css?v=6">
 
   <script defer src="/assets/js/components/back-to-top.alpine.js?v=4"></script>
   <script defer src="/assets/js/components/reveal.alpine.js?v=1"></script>
