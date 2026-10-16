@@ -32,7 +32,7 @@ require_once 'init.php';
   <header class="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/85 backdrop-blur-xl">
     <nav class="container-site flex h-[70px] items-center justify-between" aria-label="Hauptnavigation">
       <a href="#home" class="text-xl font-bold">
-        <?php echo htmlspecialchars(l10n('site.name'), ENT_QUOTES, 'UTF-8') ?>
+        <?php echo e(l10n('site.name'), ENT_QUOTES, 'UTF-8') ?>
         <span class="text-accent">.</span>
       </a>
 
