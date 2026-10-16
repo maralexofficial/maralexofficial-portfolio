@@ -75,6 +75,15 @@
               "label": "Mehr erfahren",
               "url": "#contact"
             }
+        },
+        {
+            "tag": "01 / SHELL",
+            "title": "System Administration",
+            "text": "Moderne Websites mit responsivem Design und übersichtlicher Benutzerführung.",
+            "action": {
+              "label": "Mehr erfahren",
+              "url": "#contact"
+            }
         }
       ]
     }
