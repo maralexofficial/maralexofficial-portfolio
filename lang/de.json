@@ -52,6 +52,21 @@
       ]
     },
     "projects": {
-      
+      "title": {
+        "first": "Neue",
+        "second": "Projekte"
+      },
+      "text": "Neue Projekte und spannende Ideen reizen mich.\nIch arbeite mich schnell in neue Themen ein, denke mich gerne in unterschiedliche Aufgaben hinein und finde mich auch in bestehenden Teams schnell zurecht.",
+      "cards": [
+        {
+            "tag": "HTML",
+            "title": "HTML",
+            "text": "HTML",
+            "action": {
+              "label": "HTML",
+              "url": "#"
+            }
+        }
+      ]
     }
 }
