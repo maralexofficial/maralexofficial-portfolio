@@ -26,7 +26,7 @@ require_once 'init.php';
 
   <link rel="stylesheet" href="./dist/output.css">
 
-  
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.17.4/dist/cdn.min.js"></script>
 </head>
 
 <body class="antialiased">
