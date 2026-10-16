@@ -182,7 +182,7 @@ require_once 'init.php';
     x-transition:leave="transition ease-in duration-300"
     x-transition:leave-start="opacity-100"
     x-transition:leave-end="opacity-0"
-    class="fixed bottom-6 right-6 z-50 flex size-12 items-center justify-center rounded-full border border-border bg-surface text-foreground shadow-lg transition-colors hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+    class="fixed bottom-6 right-6 z-50 flex size-12 items-center justify-center button-primary"
     aria-label="Back to top"
     title="Back to top"
   >
