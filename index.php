@@ -26,7 +26,7 @@ require_once 'init.php';
 
   <link rel="stylesheet" href="./dist/output.css">
 
-  <script defer src="/assets/js/alpine.min.js"></script>
+  
 </head>
 
 <body class="antialiased">
