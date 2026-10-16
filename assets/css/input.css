@@ -73,7 +73,7 @@
                 rgba(11, 13, 16, 0.82) 48%,
                 rgba(11, 13, 16, 0.35) 100%
             ),
-            url("/assets/images/grid-bg.png");
+            url("/assets/images/grid-bg.webp");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
