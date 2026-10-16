@@ -97,9 +97,13 @@
     "contact": {
         "title": {
             "first": "Lass uns",
-            "second": "reden!"
+            "second": "reden."
         },
-        "text": "Du hast eine Idee oder ein spannendes Projekt?\\nIch bin immer offen für neue Herausforderungen und den Austausch mit anderen Technikbegeisterten.\\nSchreib mir gerne – ich freue mich darauf, von dir zu hören und gemeinsam etwas auf die Beine zu stellen."
+        "text": "Du hast eine Idee oder ein spannendes Projekt?\\nIch bin immer offen für neue Herausforderungen und den Austausch mit anderen Technikbegeisterten.\\nSchreib mir gerne – ich freue mich darauf, von dir zu hören und gemeinsam etwas auf die Beine zu stellen.",
+        "action": {
+            "label": "Direkt kontaktieren!",
+            "url": "mailto://#"
+        }
     },
     "footer": {
       "copyright": "Copyright bei maralex.xyz"
