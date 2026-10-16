@@ -24,9 +24,10 @@ require_once 'init.php';
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0b0d10">
 
-  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="/dist/output.css">
 
   <script defer src="/assets/js/components/back-to-top.alpine.js?v=3"></script>
+  <script defer src="/assets/js/components/reveal.alpine.js?v=1"></script>
   <script defer src="/assets/js/alpine.min.js?v=2"></script>
 </head>
 
@@ -82,13 +83,12 @@ require_once 'init.php';
       </div>
     </section>
 
-    <section x-data="{ message: 'Hello World! Alpine.js läuft 🚀' }">
-        <h2>Hello World</h2>
-        <p x-text="message"></p>
-        <p class="status">Wenn du diesen Text siehst, funktioniert Alpine.</p>
-    </section>
-
-    <section id="about" class="section-padding">
+    <section
+      id="about"
+      x-data="reveal"
+      :class="{ 'is-visible': shown }"
+      class="section-padding reveal"
+    >
       <div class="container-site">
         <h2 class="section-heading">
           <?= htmlspecialchars(l10n('about.title.first'), ENT_QUOTES, 'UTF-8') ?>
@@ -109,7 +109,12 @@ require_once 'init.php';
       </div>
     </section>
 
-    <section id="projects" class="section-padding">
+    <section
+      id="projects"
+      x-data="reveal"
+      :class="{ 'is-visible': shown }"
+      class="section-padding reveal"
+    >
       <div class="container-site">
         <h2 class="section-heading">
           <?= htmlspecialchars(l10n('projects.title.first'), ENT_QUOTES, 'UTF-8') ?>
@@ -143,7 +148,12 @@ require_once 'init.php';
       </div>
     </section>
 
-    <section id="contact" class="section-padding">
+    <section
+      id="contact"
+      x-data="reveal"
+      :class="{ 'is-visible': shown }"
+      class="section-padding reveal"
+    >
       <div class="container-site">
         <div class="mx-auto max-w-2xl rounded-2xl border border-border bg-surface p-8 text-center sm:p-12">
           <h2 class="section-heading mb-5">
@@ -183,11 +193,10 @@ require_once 'init.php';
     x-transition:leave-start="opacity-100"
     x-transition:leave-end="opacity-0"
     class="fixed bottom-6 right-6 z-50 flex size-12 items-center justify-center button button-primary"
-    aria-label="Back to top"
-    title="Back to top"
+    aria-label="Zurück nach oben"
+    title="Zurück nach oben"
   >
     Top
   </a>
-
 </body>
 </html>
