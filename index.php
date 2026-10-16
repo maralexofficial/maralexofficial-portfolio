@@ -243,11 +243,11 @@ require_once 'init.php';
     <?php echo e(l10n('common.backToTop.label'), ENT_QUOTES, 'UTF-8') ?>
   </a>
 
-  
+    
 <div
     x-data
     x-cloak
-    class="fixed bottom-6 left-4 right-4 z-[100] flex flex-col items-end gap-3 sm:left-auto sm:w-96"
+    class="toast-container"
     aria-live="polite"
 >
     <template x-for="item in $store.notifications.items" :key="item.id">
@@ -259,28 +259,31 @@ require_once 'init.php';
             x-transition:leave="transition ease-in duration-200"
             x-transition:leave-start="translate-y-0 opacity-100"
             x-transition:leave-end="translate-y-2 opacity-0"
-            class="flex w-full items-center gap-3 rounded-xl border border-border border-l-4 bg-surface p-4 shadow-2xl"
-            :class="{
-                'border-l-accent': item.type === 'success',
-                'border-l-red-500': item.type === 'error',
-                'border-l-amber-400': item.type === 'warning',
-                'border-l-blue-400': item.type === 'info'
-            }"
+            class="toast"
+            :class="'toast-' + item.type"
             role="status"
         >
-            <p class="min-w-0 flex-1 text-sm text-foreground" x-text="item.message"></p>
+            <p class="toast-message" x-text="item.message"></p>
 
             <button
                 type="button"
-                class="text-muted transition hover:text-foreground"
+                class="toast-close"
                 aria-label="Benachrichtigung schließen"
                 @click="$store.notifications.dismiss(item.id)"
             >
-                <span aria-hidden="true">&times;</span>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                >
+                    <path d="M18 6 6 18M6 6l12 12"/>
+                </svg>
             </button>
         </div>
     </template>
 </div>
-
 </body>
 </html>
