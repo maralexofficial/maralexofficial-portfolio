@@ -150,7 +150,7 @@ require_once 'init.php';
         <div class="mx-auto max-w-2xl rounded-2xl border border-border bg-surface p-8 text-center sm:p-12">
           <h2 class="section-heading mb-5">
             <?php echo htmlspecialchars(l10n('contact.title.first'), ENT_QUOTES, 'UTF-8') ?> <span class="text-accent">
-              <?php echo htmlspecialchars(l10n('projects.title.second'), ENT_QUOTES, 'UTF-8') ?>
+              <?php echo htmlspecialchars(l10n('contact.title.second'), ENT_QUOTES, 'UTF-8') ?>
             </span>
           </h2>
 
