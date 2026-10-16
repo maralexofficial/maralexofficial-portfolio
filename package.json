@@ -3,11 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "tailwindcss -i ./assets/css/input.css -o ./dist/output.css --minify"
+    "build": "tailwindcss -i ./assets/css/input.css -o ./dist/output.css --minify && cp ./node_modules/alpinejs/dist/cdn.min.js ./assets/js/alpine.min.js"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.11",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.11",
+    "alpinejs": "^3.17.4"
   },
   "overrides": {
     "@parcel/watcher": "2.6.0"
