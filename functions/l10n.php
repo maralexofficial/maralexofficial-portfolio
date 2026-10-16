@@ -1,7 +1,10 @@
 <?php
 
-function l10n(string $path, mixed $default = null): mixed
-{
+function l10n(
+    string $path,
+    mixed $default = null,
+    array $replace = []
+): mixed {
     global $translations;
 
     $value = $translations;
@@ -14,5 +17,21 @@ function l10n(string $path, mixed $default = null): mixed
         $value = $value[$key];
     }
 
-    return $value ?? $default ?? "Key not found ({$path})";
+    if ($value === null) {
+        return $default ?? "Key not found ({$path})";
+    }
+
+    if (!is_string($value) || $replace === []) {
+        return $value;
+    }
+
+    foreach ($replace as $key => $replacement) {
+        $value = str_replace(
+            '{' . $key . '}',
+            (string) $replacement,
+            $value
+        );
+    }
+
+    return $value;
 }

@@ -169,8 +169,10 @@ require_once 'init.php';
   <footer class="border-t border-border py-8">
     <div class="container-site flex flex-col items-center justify-between gap-3 text-center text-sm text-muted sm:flex-row">
       <p>
-        © <span id="year"><?php echo date('Y') ?></span>
-        <?php echo htmlspecialchars(l10n('footer.copyright'), ENT_QUOTES, 'UTF-8') ?>
+        ©
+        <?php echo htmlspecialchars(l10n('footer.copyright', null, [
+          'date' => date('Y')
+        ]), ENT_QUOTES, 'UTF-8') ?>
       </p>
     </div>
   </footer>
