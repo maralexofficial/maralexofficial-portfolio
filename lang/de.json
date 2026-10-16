@@ -64,7 +64,16 @@
             "text": "Moderne Websites mit responsivem Design und übersichtlicher Benutzerführung.",
             "action": {
               "label": "Mehr erfahren",
-              "url": "#"
+              "url": "#contact"
+            }
+        },
+        {
+            "tag": "01 / APP",
+            "title": "Webentwicklung",
+            "text": "Moderne Websites mit responsivem Design und übersichtlicher Benutzerführung.",
+            "action": {
+              "label": "Mehr erfahren",
+              "url": "#contact"
             }
         }
       ]
