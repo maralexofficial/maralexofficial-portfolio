@@ -70,7 +70,7 @@ require_once 'init.php';
 
           <div class="flex flex-wrap gap-4">
             <a href="#projects" class="button button-primary">
-              <?php echo htmlspecialchars(l10n('hero.button.projects'), ENT_QUOTES, 'UTF-8') ?> →
+              <?php echo htmlspecialchars(l10n('hero.button.projects'), ENT_QUOTES, 'UTF-8') ?>
             </a>
             <a href="#contact" class="button">
               <?php echo htmlspecialchars(l10n('hero.button.contact'), ENT_QUOTES, 'UTF-8') ?>
