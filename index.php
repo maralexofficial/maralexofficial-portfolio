@@ -134,7 +134,9 @@ require_once 'init.php';
               <p class="mb-6 text-muted">
                 <?php echo htmlspecialchars($item['text'], ENT_QUOTES, 'UTF-8') ?>
               </p>
-              <a href="#contact" class="font-medium text-accent hover:underline">Mehr erfahren →</a>
+              <a href="#contact" class="font-medium text-accent hover:underline">
+                <?php echo htmlspecialchars($item['action']['label'], ENT_QUOTES, 'UTF-8') ?>
+              </a>
             </article>
           <?php endforeach; ?>
         </div>
