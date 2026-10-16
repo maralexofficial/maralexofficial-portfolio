@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "tailwindcss -i ./assets/css/input.css -o ./dist/output.css --minify && esbuild ./assets/js/app.js --bundle --minify --outfile=./dist/assets/js/app.js"
+    "build": "tailwindcss -i ./assets/css/input.css -o ./dist/output.css --minify"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.11",
