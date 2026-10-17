@@ -163,8 +163,10 @@ require_once 'init.php';
               <?php echo e(l10n('social.title.second'), ENT_QUOTES, 'UTF-8') ?>
             </span>
         </h2>
-        <?php echo e(l10n('social.text'), ENT_QUOTES, 'UTF-8') ?>
-        <ul class="flex flex-row">
+        <p class="max-w-2xl text-lg leading-relaxed text-muted">
+          <?php echo e(l10n('social.text'), ENT_QUOTES, 'UTF-8') ?>
+        </p>
+        <ul class="flex flex-row space-y-4 mt-4">
           <li>
             <i class="si si-github text-5xl"></i>
           </li>
