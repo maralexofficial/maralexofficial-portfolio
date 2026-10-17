@@ -35,7 +35,7 @@ require_once 'init.php';
   <script>eruda.init();</script>
 
   <link rel="stylesheet" href="/assets/fonts/simpleicons/simple-icons.min.css">
-  <link rel="stylesheet" href="/dist/output.css?v=6">
+  <link rel="stylesheet" href="/dist/output.css?v=8">
 </head>
 
 <body class="antialiased">
