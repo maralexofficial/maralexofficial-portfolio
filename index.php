@@ -162,7 +162,7 @@ require_once 'init.php';
         </h2>
         <?php echo e(l10n('social.text'), ENT_QUOTES, 'UTF-8') ?>
 
-        <i class="si si-github text-lg size-12"></i>
+        <i class="si si-github w-8 h-8"></i>
       </div>
     </section>
 
