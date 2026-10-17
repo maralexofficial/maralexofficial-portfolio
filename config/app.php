@@ -25,9 +25,21 @@ return [
     'social' => [
       'enabled' => true,
       'networks' => [
-        'github' => 'https://maralexofficial.github.de',
-        'steam' => '',
-        'discord' => '',
+        'github' => [
+          'icon' => 'si si-github',
+          'url' => '#',
+          'title' => 'Github',
+        ],
+        'steam' => [
+          'icon' => 'si si-steam',
+          'url' => '#',
+          'title' => 'Steam',
+        ],
+        'discord' => [
+          'icon' => 'si si-discord',
+          'url' => '#',
+          'title' => 'Discord',
+        ],
       ]
     ]
 ];

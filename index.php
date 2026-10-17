@@ -147,6 +147,18 @@ require_once 'init.php';
           <?php echo e(l10n('social.text'), ENT_QUOTES, 'UTF-8') ?>
         </p>
         <ul class="flex flex-row space-x-4 mt-8">
+
+          <?php foreach ($config['social']['networks'] as $item): ?>
+          <li>
+            <a
+              class="text-muted transition hover:text-foreground"
+              href="<?php echo e($item['url'], ENT_QUOTES, 'UTF-8') ?>"
+            >
+              <?php echo e($item['label'], ENT_QUOTES, 'UTF-8') ?>
+            </a>
+          </li>
+          <?php endforeach; ?>
+          
           <li>
             <?php echo $config['name']; ?>
             <a class="text-accent" href="#">
