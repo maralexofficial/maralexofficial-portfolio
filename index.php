@@ -31,9 +31,6 @@ require_once 'init.php';
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0b0d10">
 
-  <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-  <script>eruda.init();</script>
-
   <link rel="stylesheet" href="/assets/fonts/simpleicons/simple-icons.min.css">
   <link rel="stylesheet" href="/dist/output.css?v=8">
 </head>
@@ -147,7 +144,6 @@ require_once 'init.php';
           <?php echo e(l10n('social.text'), ENT_QUOTES, 'UTF-8') ?>
         </p>
         <ul class="flex flex-row space-x-4 mt-8">
-
           <?php foreach ($config['social']['networks'] as $item): ?>
           <li>
             <a class="text-accent" title="<?php echo e($item['title'], ENT_QUOTES, 'UTF-8') ?>" href="<?php echo e($item['url'], ENT_QUOTES, 'UTF-8') ?>">
@@ -155,12 +151,6 @@ require_once 'init.php';
             </a>
           </li>
           <?php endforeach; ?>
-          
-          <li>
-            <a class="text-accent" href="#">
-              <i class="si si-github text-5xl"></i>
-            </a>
-          </li>
         </ul>
       </div>
     </section>
