@@ -166,7 +166,7 @@ require_once 'init.php';
         <p class="max-w-2xl text-lg leading-relaxed text-muted">
           <?php echo e(l10n('social.text'), ENT_QUOTES, 'UTF-8') ?>
         </p>
-        <ul class="flex flex-row space-y-4 mt-8">
+        <ul class="flex flex-row space-x-4 mt-8">
           <li>
             <i class="si si-github text-5xl"></i>
           </li>
