@@ -149,30 +149,18 @@ require_once 'init.php';
         <ul class="flex flex-row space-x-4 mt-8">
 
           <?php foreach ($config['social']['networks'] as $item): ?>
+<?php if ($item['icon'] != '' && $item['url'] != '' && $item['title'] != ''){ ?>
           <li>
-            <a
-              class="text-muted transition hover:text-foreground"
-              href="<?php echo e($item['url'], ENT_QUOTES, 'UTF-8') ?>"
-            >
-              <?php echo e($item['label'], ENT_QUOTES, 'UTF-8') ?>
+            <a class="text-accent" title="<?php echo e($item['title'], ENT_QUOTES, 'UTF-8') ?>" href="<?php echo e($item['url'], ENT_QUOTES, 'UTF-8') ?>">
+              <i class="si <?php echo e($item['icon'], ENT_QUOTES, 'UTF-8') ?> text-5xl"></i>
             </a>
           </li>
+          <?php } ?>
           <?php endforeach; ?>
           
           <li>
-            <?php echo $config['name']; ?>
             <a class="text-accent" href="#">
               <i class="si si-github text-5xl"></i>
-            </a>
-          </li>
-          <li>
-            <a class="text-accent" href="#">
-              <i class="si si-steam text-5xl"></i>
-            </a>
-          </li>
-          <li>
-            <a class="text-accent" href="#">
-              <i class="si si-discord text-5xl"></i>
             </a>
           </li>
         </ul>
