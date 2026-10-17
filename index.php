@@ -31,6 +31,9 @@ require_once 'init.php';
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0b0d10">
 
+  <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+  <script>eruda.init();</script>
+
   <link rel="stylesheet" href="/assets/fonts/simpleicons/simple-icons.min.css">
   <link rel="stylesheet" href="/dist/output.css?v=6">
 </head>
