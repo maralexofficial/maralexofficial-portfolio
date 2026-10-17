@@ -148,13 +148,20 @@ require_once 'init.php';
         </p>
         <ul class="flex flex-row space-x-4 mt-8">
           <li>
-            <i class="si si-github text-5xl"></i>
+            <?php echo $config['social.enabled']; ?>
+            <a class="text-accent" href="#">
+              <i class="si si-github text-5xl"></i>
+            </a>
           </li>
           <li>
-            <i class="si si-steam text-5xl"></i>
+            <a class="text-accent" href="#">
+              <i class="si si-steam text-5xl"></i>
+            </a>
           </li>
           <li>
-            <i class="si si-discord text-5xl"></i>
+            <a class="text-accent" href="#">
+              <i class="si si-discord text-5xl"></i>
+            </a>
           </li>
         </ul>
       </div>
