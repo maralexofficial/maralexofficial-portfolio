@@ -24,6 +24,10 @@
             "url": "#projects"
         },
         {
+            "label": "Sozial",
+            "url": "#social"
+        },
+        {
             "label": "Kontakt",
             "url": "#contact"
         }
