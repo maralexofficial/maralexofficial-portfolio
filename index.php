@@ -171,7 +171,10 @@ require_once 'init.php';
             <i class="si si-github text-5xl"></i>
           </li>
           <li>
-            <i class="si si-github text-5xl"></i>
+            <i class="si si-steam text-5xl"></i>
+          </li>
+          <li>
+            <i class="si si-discord text-5xl"></i>
           </li>
         </ul>
       </div>
