@@ -186,44 +186,10 @@ require_once 'init.php';
     </section>
   </main>
 
-  <footer class="border-t border-border py-8">
-    <div class="container-site flex flex-col items-center justify-between gap-3 text-center text-sm text-muted sm:flex-row">
-      <p>
-        <?php echo e(l10n('footer.copyright', "maralex.xyz", [
-          'date' => date('Y')
-        ]), ENT_QUOTES, 'UTF-8') ?>
-      </p>
-      <span class="mb-6 inline-block rounded-full border border-border px-4 py-2 text-sm text-muted">
-            Sprache ändern: <a class="hover:text-accent active:text-accent" href="/lang/de">DE</a> | <a class="hover:text-accent active:text-accent" href="/lang/en">EN</a>
-      </span>
-    </div>
-  </footer>
+  <?php include('footer.php'); ?>
 
-  <script defer src="/assets/js/components/back-to-top.alpine.js?v=4"></script>
-  <script defer src="/assets/js/components/reveal.alpine.js?v=1"></script>
-  <script defer src="/assets/js/components/language-toast.alpine.js?v=1"></script>
-  <script defer src="/assets/js/components/notifications.alpine.js?v=1"></script>
-  <script defer src="/assets/js/alpine.min.js?v=2"></script>
-
-  <a
-    href="#home"
-    x-data="backToTop"
-    x-cloak
-    x-show="visible"
-    x-transition:enter="transition ease-out duration-300"
-    x-transition:enter-start="opacity-0"
-    x-transition:enter-end="opacity-100"
-    x-transition:leave="transition ease-in duration-300"
-    x-transition:leave-start="opacity-100"
-    x-transition:leave-end="opacity-0"
-    class="fixed bottom-6 right-6 z-50 flex size-12 items-center justify-center button button-primary"
-    aria-label="<?php echo e(l10n('common.backToTop.ariaLabel'), ENT_QUOTES, 'UTF-8') ?>"
-    title="<?php echo e(l10n('common.backToTop.ariaLabel'), ENT_QUOTES, 'UTF-8') ?>"
-  >
-    <?php echo e(l10n('common.backToTop.label'), ENT_QUOTES, 'UTF-8') ?>
-  </a>
-
-  <?php include('sections/toastContainer.php'); ?>
+  <?php include('sections/backToTop.php'); ?>
+  <?php include('sections/toasts.php'); ?>
 
 </body>
 </html>
