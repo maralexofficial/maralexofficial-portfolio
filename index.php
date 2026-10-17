@@ -164,8 +164,14 @@ require_once 'init.php';
             </span>
         </h2>
         <?php echo e(l10n('social.text'), ENT_QUOTES, 'UTF-8') ?>
-
-        <i class="si si-github text-5xl"></i>
+        <ul class="flex flex-row">
+          <li>
+            <i class="si si-github text-5xl"></i>
+          </li>
+          <li>
+            <i class="si si-github text-5xl"></i>
+          </li>
+        </ul>
       </div>
     </section>
 
