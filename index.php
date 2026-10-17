@@ -148,7 +148,7 @@ require_once 'init.php';
         </p>
         <ul class="flex flex-row space-x-4 mt-8">
           <li>
-            <?php echo $config['social.enabled']; ?>
+            <?php echo $config['name']; ?>
             <a class="text-accent" href="#">
               <i class="si si-github text-5xl"></i>
             </a>
