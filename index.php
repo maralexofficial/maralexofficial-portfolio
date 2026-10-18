@@ -134,7 +134,7 @@ require_once 'init.php';
     <?php include('includes/sections/contact.php'); ?>
   </main>
 
-  <?php include('footer.php'); ?>
+  
 
   <?php include('includes/backToTop.php'); ?>
   <?php include('includes/toasts.php'); ?>
