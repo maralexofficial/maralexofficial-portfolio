@@ -16,7 +16,7 @@
             <?php echo e(l10n('contact.text'), ENT_QUOTES, 'UTF-8') ?>
           </p>
           
-          <a href="mailto://<?php echo $config['admin_mail'] ?>" class="button button-primary">
+          <a href="mailto:<?php echo $config['admin_mail'] ?>" class="button button-primary">
             <?php echo e(l10n('contact.action.label'), ENT_QUOTES, 'UTF-8') ?>
           </a>
         </div>
