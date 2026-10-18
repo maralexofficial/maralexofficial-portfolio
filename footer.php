@@ -7,7 +7,7 @@
         ]), ENT_QUOTES, 'UTF-8') ?>
       </p>
 
-      <a>
+      <a target="_blank" href="https://cdn.maralexno.de/pages/imprint.html">
         Impressum
       </a>
 
