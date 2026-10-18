@@ -127,14 +127,14 @@ require_once 'init.php';
       </div>
     </section>
 
-    <?php include('sections/social.php'); ?>
-    <?php include('sections/contact.php'); ?>
+    <?php include('includes/sections/social.php'); ?>
+    <?php include('includes/sections/contact.php'); ?>
   </main>
 
   <?php include('footer.php'); ?>
 
-  <?php include('sections/backToTop.php'); ?>
-  <?php include('sections/toasts.php'); ?>
+  <?php include('includes/backToTop.php'); ?>
+  <?php include('includes/toasts.php'); ?>
 
 </body>
 </html>
