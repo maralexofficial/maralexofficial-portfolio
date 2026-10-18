@@ -105,9 +105,16 @@
         },
         "text": "Du hast eine Idee oder ein spannendes Projekt?\nIch bin immer offen für neue Herausforderungen und den Austausch mit anderen Technikbegeisterten.\nSchreib mir gerne – ich freue mich darauf, von dir zu hören und gemeinsam etwas auf die Beine zu stellen.",
         "action": {
-            "label": "Direkt kontaktieren!",
-            "url": "mailto://#"
+            "enabled": true,
+            "label": "Direkt kontaktieren!"
         }
+    },
+    "social": {
+        "title": {
+            "first": "Soziale",
+            "second": "Netzwerke"
+        },
+        "text": "Du hast eine Idee oder ein spannendes Projekt?\nIch bin immer offen für neue Herausforderungen und den Austausch mit anderen Technikbegeisterten.\nSchreib mir gerne – ich freue mich darauf, von dir zu hören und gemeinsam etwas auf die Beine zu stellen."
     },
     "footer": {
       "copyright": "© {date} | www.maralex.xyz"

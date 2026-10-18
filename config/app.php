@@ -11,6 +11,7 @@ return [
     'url' => 'https://maralex.xyz',
     'environment' => 'production',
     'debug' => false,
+    'admin_mail' => 'alexander.bergmann@maralex.xyz'
 
     /*
     |--------------------------------------------------------------------------
