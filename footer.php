@@ -10,11 +10,11 @@
       <a
         href="https://cdn.maralexno.de/pages/imprint.html"
       >
-        <?php echo e(l10n('footer.imprint', ENT_QUOTES, 'UTF-8') ?>
+        Impressum
       </a>
 
       <span class="mb-6 inline-block rounded-full border border-border px-4 py-2 text-sm text-muted">
-        <?php echo e(l10n('footer.switch_language', ENT_QUOTES, 'UTF-8') ?>
+        Sprache ändern:
         <a class="hover:text-accent active:text-accent" href="/lang/de">DE</a>
         |
         <a class="hover:text-accent active:text-accent" href="/lang/en">EN</a>
