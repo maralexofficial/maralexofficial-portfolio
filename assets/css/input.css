@@ -28,11 +28,12 @@
         color: var(--color-foreground);
         font-family: var(--font-sans);
         line-height: 1.6;
-        @apply min-h-screen flex items-center justify-center
+      
+        @apply min-h-screen flex items-center justify-center;
     }
 
     .main {
-      @apply flex flex-col items-center gap-4
+      @apply flex flex-col items-center gap-4;
     }
 
     img,
