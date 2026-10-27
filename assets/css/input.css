@@ -29,7 +29,12 @@
         font-family: var(--font-sans);
         line-height: 1.6;
       
-        @apply min-h-screen flex items-center justify-center;
+        @apply min-h-screen flex items-center 
+        justify-center;
+    }
+
+    .logo > h1 {
+      @apply text-4xl text-white;
     }
 
     .main {
