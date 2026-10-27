@@ -84,11 +84,11 @@
     }
 
     .social ul {
-      @apply m-0 p-0 flex space-x-4 flex-col;
+        @apply m-0 flex flex-row items-center justify-center gap-4 p-0;
     }
-
+    
     .social ul li {
-      @apply flex items-center justify-center;
+        @apply flex items-center justify-center;
     }
 
     .socials .icon {
