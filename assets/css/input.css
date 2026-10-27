@@ -83,10 +83,6 @@
         @apply font-alumni text-8xl text-white;
     }
 
-    section.socials {
-      @apply flex flex-col;
-    }
-
     .social ul {
       @apply m-0 p-0 flex soace-x-4 flex-row;
     }
