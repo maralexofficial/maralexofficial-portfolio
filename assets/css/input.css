@@ -1,4 +1,4 @@
-@imoort "fontface.css";
+@imoort "./fontface.css";
 @import "tailwindcss";
 @source "../../";
 
@@ -10,7 +10,7 @@
     --color-accent: #8b5cf6;
     --color-border: #252a32;
     --font-sans: Arial, Helvetica, sans-serif;
-    --font-alumni: Alumni Sans SC;
+    --font-alumni: "Alumni Sans SC", sans-serif;
 }
 
 @layer base {
