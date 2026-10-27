@@ -91,8 +91,16 @@
         @apply flex items-center justify-center;
     }
 
+    .socials li a {
+      @apply text-muted;
+    }
+
+    .socials li a:hover {
+      @apply text-accent;
+    }
+
     .socials .icon {
-      @apply text-2xl text-muted;
+      @apply text-2xl;
     }
 
     /* Gemeinsame Button-Basis */
