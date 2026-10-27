@@ -84,7 +84,7 @@
     }
 
     .social ul {
-      @apply m-0 p-0 flex soace-x-4 flex-row;
+      @apply m-0 p-0 flex space-x-4 flex-row;
     }
 
     .social ul li {
