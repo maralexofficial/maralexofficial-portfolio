@@ -1,4 +1,4 @@
-@imoort "./fontface.css";
+@import "./fontface.css";
 @import "tailwindcss";
 @source "../../";
 
