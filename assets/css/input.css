@@ -83,11 +83,11 @@
         @apply font-alumni text-8xl text-white;
     }
 
-    .social ul {
+    .socials ul {
         @apply m-0 flex flex-row items-center justify-center gap-4 p-0;
     }
     
-    .social ul li {
+    .socials ul li {
         @apply flex items-center justify-center;
     }
 
