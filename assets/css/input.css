@@ -74,6 +74,10 @@
         @apply flex flex-col items-center space-y-4;
     }
 
+    section {
+      @apply bg-red-500;
+    }
+
     .logo > h1 {
         @apply font-alumni text-8xl text-white;
     }
