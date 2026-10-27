@@ -21,15 +21,15 @@
     }
 
     html {
-        @apply scroll-smooth font-ubuntu;
+        @apply scroll-smooth;
         scroll-padding-top: 6rem;
         scrollbar-color: var(--color-accent) var(--color-background);
         scrollbar-width: thin;
     }
 
     body {
-        @apply flex min-h-screen items-center justify-center;
-        @apply bg-background font-sans text-foreground;
+        @apply font-ubuntu flex min-h-screen items-center justify-center;
+        @apply bg-background text-foreground;
 
         line-height: 1.6;
     }
