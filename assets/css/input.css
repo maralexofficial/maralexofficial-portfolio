@@ -74,6 +74,10 @@
         @apply flex flex-col items-center space-y-4;
     }
 
+    section:not(.logo) {
+      @apply py-4;
+    }
+
     section {
       @apply bg-red-500;
     }
