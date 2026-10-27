@@ -78,6 +78,14 @@
         @apply font-alumni text-8xl text-white;
     }
 
+    section.socials {
+      @apply flex flex-col;
+    }
+
+    .socials > .icon {
+      @apply text-lg;
+    }
+
     /* Gemeinsame Button-Basis */
     .button {
         @apply inline-flex items-center justify-center gap-2;
