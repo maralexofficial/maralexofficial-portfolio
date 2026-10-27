@@ -87,6 +87,14 @@
       @apply flex flex-col;
     }
 
+    .social ul {
+      @apply m-0 p-0 flex flex-col space-x-2;
+    }
+
+    .social ul li {
+      @apply flex items-center justify-center;
+    }
+
     .socials .icon {
       @apply text-2xl;
     }
