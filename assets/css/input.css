@@ -1,5 +1,6 @@
 @import "./fontface.css";
 @import "tailwindcss";
+
 @source "../../";
 
 @theme {
@@ -19,28 +20,34 @@
     }
 
     html {
-        scroll-behavior: smooth;
+        @apply scroll-smooth;
         scroll-padding-top: 6rem;
         scrollbar-color: var(--color-accent) var(--color-background);
         scrollbar-width: thin;
     }
 
     body {
-        background: var(--color-background);
-        color: var(--color-foreground);
-        font-family: var(--font-sans);
+        @apply flex min-h-screen items-center justify-center;
+        @apply bg-background font-sans text-foreground;
+
         line-height: 1.6;
-      
-        @apply min-h-screen flex items-center 
-        justify-center;
     }
 
-    .logo > h1 {
-      @apply text-8xl text-white font-alumni;
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-bold tracking-tight;
     }
 
-    .main {
-      @apply flex flex-col items-center gap-4;
+    a {
+        @apply transition-colors duration-200;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+        @apply outline-2 outline-offset-4 outline-accent;
+    }
+
+    ::selection {
+        @apply bg-accent text-white;
     }
 
     img,
@@ -48,116 +55,107 @@
     video,
     canvas,
     svg {
-        display: block;
-        max-width: 100%;
+        @apply block max-w-full;
     }
 
     img,
     video {
-        height: auto;
+        @apply h-auto;
     }
 
-    a:focus-visible,
-    button:focus-visible {
-        outline: 2px solid var(--color-accent);
-        outline-offset: 4px;
-    }
-
-    ::selection {
-        background: var(--color-accent);
-        color: white;
+    button:disabled {
+        @apply cursor-not-allowed opacity-50;
     }
 }
 
 @layer components {
+    /* Layout */
+    .main {
+        @apply flex flex-col items-center gap-4;
+    }
+
+    .logo > h1 {
+        @apply font-alumni text-8xl text-white;
+    }
+
+    /* Gemeinsame Button-Basis */
     .button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-
-        border: 1px solid var(--color-border);
-        border-radius: 0.625rem;
-
-        font-weight: 600;
-        line-height: 1.25;
-        white-space: nowrap;
-
-        transition:
-            transform 180ms ease,
-            background-color 180ms ease,
-            border-color 180ms ease;
+        @apply inline-flex items-center justify-center gap-2;
+        @apply rounded-xl border border-border;
+        @apply font-semibold leading-tight whitespace-nowrap;
+        @apply transition-all duration-200 ease-in-out;
+        @apply focus-visible:outline-2 focus-visible:outline-offset-4;
+        @apply focus-visible:outline-accent;
+        @apply disabled:pointer-events-none disabled:opacity-50;
     }
 
     .button:hover {
-        transform: translateY(-2px);
+        @apply -translate-y-0.5;
     }
 
-    .button:focus-visible {
-        outline: 2px solid var(--color-accent);
-        outline-offset: 4px;
+    .button:disabled:hover {
+        @apply translate-y-0;
     }
 
-    .button:disabled {
-        opacity: 0.5;
-        cursor: not-allowed;
-        transform: none;
+    /* Button-Größen */
+    .button-xs {
+        @apply rounded-md px-2 py-1 text-xs;
     }
 
-    /* Größen */
     .button-sm {
-        padding: 0.375rem 0.75rem;
-        font-size: 0.875rem;
+        @apply rounded-lg px-3 py-1.5 text-sm;
     }
 
     .button-md {
-        padding: 0.625rem 1rem;
-        font-size: 1rem;
+        @apply px-4 py-2 text-base;
     }
 
     .button-lg {
-        padding: 0.875rem 1.5rem;
-        font-size: 1.125rem;
+        @apply rounded-xl px-6 py-3 text-lg;
     }
 
     .button-xl {
-        padding: 1rem 2rem;
-        font-size: 1.25rem;
+        @apply rounded-xl px-8 py-4 text-xl;
     }
 
-    /* Varianten */
+    /* Button-Varianten */
     .button-primary {
-        background: var(--color-accent);
-        border-color: var(--color-accent);
-        color: white;
-    }
-
-    .button-primary:hover {
-        background: #7c3aed;
-        border-color: #7c3aed;
+        @apply border-accent bg-accent text-white;
+        @apply hover:border-violet-700 hover:bg-violet-700;
     }
 
     .button-secondary {
-        background: var(--color-surface);
-        border-color: var(--color-border);
-        color: var(--color-foreground);
+        @apply border-border bg-surface text-foreground;
+        @apply hover:bg-border;
     }
 
     .button-outline {
-        background: transparent;
-        border-color: var(--color-accent);
-        color: var(--color-accent);
+        @apply border-accent bg-transparent text-accent;
+        @apply hover:bg-accent hover:text-white;
     }
 
     .button-ghost {
-        background: transparent;
-        border-color: transparent;
-        color: var(--color-foreground);
+        @apply border-transparent bg-transparent text-foreground;
+        @apply hover:bg-surface;
     }
 
     .button-danger {
-        background: #dc2626;
-        border-color: #dc2626;
-        color: white;
+        @apply border-red-600 bg-red-600 text-white;
+        @apply hover:border-red-700 hover:bg-red-700;
+    }
+
+    .button-success {
+        @apply border-emerald-600 bg-emerald-600 text-white;
+        @apply hover:border-emerald-700 hover:bg-emerald-700;
+    }
+
+    .button-link {
+        @apply border-transparent bg-transparent text-accent;
+        @apply underline-offset-4 hover:underline;
+    }
+
+    /* Volle Breite */
+    .button-block {
+        @apply w-full;
     }
 }
