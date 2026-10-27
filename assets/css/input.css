@@ -92,7 +92,7 @@
     }
 
     .socials .icon {
-      @apply text-2xl;
+      @apply text-2xl text-muted;
     }
 
     /* Gemeinsame Button-Basis */
