@@ -82,7 +82,7 @@
       @apply flex flex-col;
     }
 
-    .socials > .icon {
+    .socials .icon {
       @apply text-lg;
     }
 
