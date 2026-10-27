@@ -12,6 +12,7 @@
     --color-border: #252a32;
     --font-sans: Arial, Helvetica, sans-serif;
     --font-alumni: "Alumni Sans SC", sans-serif;
+    --font-ubuntu: "Ubuntu", sans-serif;
 }
 
 @layer base {
@@ -20,7 +21,7 @@
     }
 
     html {
-        @apply scroll-smooth;
+        @apply scroll-smooth font-ubuntu;
         scroll-padding-top: 6rem;
         scrollbar-color: var(--color-accent) var(--color-background);
         scrollbar-width: thin;
