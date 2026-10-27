@@ -36,7 +36,7 @@
     }
 
     .logo > h1 {
-      @apply text-4xl text-white font-alumni;
+      @apply text-8xl text-white font-alumni;
     }
 
     .main {
