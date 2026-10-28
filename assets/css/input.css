@@ -103,7 +103,6 @@
       @apply text-2xl;
     }
 
-    /* Gemeinsame Button-Basis */
     .button {
         @apply inline-flex items-center justify-center gap-2;
         @apply rounded-xl border border-border;
