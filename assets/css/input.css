@@ -77,10 +77,6 @@
         @apply flex flex-col items-center space-y-4;
     }
 
-    section:not(.logo) {
-      @apply py-4;
-    }
-
     .logo > h1 {
         @apply font-coda text-[94px] text-white;
     }
