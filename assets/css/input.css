@@ -78,7 +78,7 @@
     }
 
     .logo {
-        @apply mb-8;
+        @apply mb-4;
     }
 
     .logo > .svg {
