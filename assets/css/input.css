@@ -80,7 +80,7 @@
     }
 
     .logo > h1 {
-        @apply font-alumni text-[94px] text-white;
+        @apply font-ubuntu text-[94px] text-white;
     }
 
     .socials ul {
