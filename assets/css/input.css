@@ -13,6 +13,8 @@
     --font-sans: Arial, Helvetica, sans-serif;
     --font-alumni: "Alumni Sans SC", sans-serif;
     --font-ubuntu: "Ubuntu", sans-serif;
+    --font-coda: "Coda", sans-serif;
+    --font-ibm-plex: "IBM Plex Sans Hebrew", sans-serif;
 }
 
 @layer base {
@@ -80,7 +82,7 @@
     }
 
     .logo > h1 {
-        @apply font-ubuntu text-[94px] text-white;
+        @apply font-font-ibm-plex text-[94px] text-white;
     }
 
     .socials ul {
