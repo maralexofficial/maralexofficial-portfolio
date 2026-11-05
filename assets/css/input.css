@@ -82,7 +82,7 @@
     }
 
     .logo > h1 {
-        @apply font-font-ibm-plex text-[94px] text-white;
+        @apply font-ibm-plex text-[94px] text-white;
     }
 
     .socials ul {
