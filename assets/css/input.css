@@ -4,7 +4,7 @@
 @source "../../";
 
 @theme {
-    --color-background: #260374;
+    --color-background: #0b0d10;
     --color-surface: #14171c;
     --color-foreground: #f5f5f5;
     --color-muted: #9ca3af;
@@ -75,6 +75,10 @@
     /* Layout */
     .main {
         @apply flex flex-col items-center;
+    }
+
+    .logo {
+        @apply mb-8;
     }
 
     .logo > .svg {
