@@ -80,7 +80,7 @@
     }
 
     .logo > h1 {
-        @apply font-alumni text-8xl text-white;
+        @apply font-alumni text-10xl text-white;
     }
 
     .socials ul {
