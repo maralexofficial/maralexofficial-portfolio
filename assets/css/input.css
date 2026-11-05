@@ -74,11 +74,11 @@
 @layer components {
     /* Layout */
     .main {
-        @apply flex flex-col items-center space-y-4;
+        @apply flex flex-col items-center;
     }
 
-    .logo > h1 {
-        @apply uppercase font-coda text-[94px] text-white;
+    .logo {
+        @apply mb-8;
     }
 
     .socials ul {
